@@ -2,89 +2,91 @@
 /* style.css */
 body {
 	margin: 0;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-	color: white;
-	display: flex;
-	justify-content: center;
+	font-family: 'Courier New', monospace;
+	background: #87CEEB;
+	background-image: linear-gradient(#87CEEB 50%, #5c9432 50%);
+	color: #fff;
   }
   
-  .container {
-	width: 100%;
-	max-width: 500px;
+  .world {
+	max-width: 600px;
+	margin: auto;
 	padding: 20px;
   }
   
-  .profile {
+  .block {
+	background: #8B5A2B;
+	border: 4px solid #5a3b1c;
+	box-shadow: inset -4px -4px 0 #3e2a15, inset 4px 4px 0 #a06b3b;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+  }
+  
+  .header-block {
 	text-align: center;
-	margin-bottom: 30px;
+	background: #3c8527;
   }
   
-  .avatar {
-	width: 80px;
-	height: 80px;
-	background: #00c6ff;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: bold;
-	font-size: 24px;
-	margin: 0 auto 10px;
+  .player-card {
+	text-align: center;
+	background: #a67c52;
   }
   
-  .subtitle {
-	opacity: 0.8;
-	font-size: 14px;
+  .skin {
+	font-size: 40px;
   }
   
-  .links {
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-	margin-bottom: 30px;
-  }
-  
-  .card {
+  .links-block a {
+	display: block;
+	background: #6b8e23;
+	margin: 8px 0;
+	padding: 10px;
 	text-decoration: none;
 	color: white;
-	padding: 14px;
-	border-radius: 12px;
-	background: rgba(255,255,255,0.1);
-	backdrop-filter: blur(10px);
-	transition: 0.3s;
-	text-align: center;
+	border: 3px solid #3e5a12;
   }
   
-  .card:hover {
-	background: rgba(255,255,255,0.2);
-	transform: translateY(-3px);
+  .links-block a:hover {
+	background: #7fae2e;
   }
   
-  .about, .skills {
-	margin-bottom: 25px;
-  }
-  
-  h2 {
-	margin-bottom: 10px;
-  }
-  
-  .skills-grid {
+  .grid {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 8px;
+	gap: 10px;
   }
   
-  .skills-grid span {
-	background: rgba(255,255,255,0.15);
-	padding: 6px 10px;
-	border-radius: 8px;
-	font-size: 12px;
-  }
-  
-  footer {
+  .cube {
+	background: #7cfc00;
+	color: black;
+	padding: 10px;
+	flex: 1 1 40%;
 	text-align: center;
-	font-size: 12px;
-	opacity: 0.7;
+	border: 3px solid #3e5a12;
+	box-shadow: inset -3px -3px 0 #2e3f0a, inset 3px 3px 0 #aaff55;
+  }
+  
+  .cube.large {
+	flex: 1 1 100%;
+  }
+  
+  .about-block {
+	background: #c2b280;
+	color: black;
+  }
+  
+  .skills-block {
+	background: #deb887;
+	color: black;
+  }
+  
+  .projects-block {
+	background: #cd853f;
+  }
+  
+  .footer-block {
+	text-align: center;
+	background: #2f4f4f;
   }
   
