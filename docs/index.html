@@ -1,68 +1,426 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Josue Trujillo | Minecraft Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josue Trujillo – Portfolio</title>
+<link rel="stylesheet" href="assets/style.css" />
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="world">
 
-    <header class="block header-block">
-      <h1>⛏️ Josue.dev</h1>
-      <p>Surviving & Building in the Dev World</p>
-    </header>
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">⚔ JTZ.DEV</span>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Exp.</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <section class="block player-card">
-      <div class="skin">🧑‍💻</div>
-      <h2>Josue Trujillo</h2>
-      <p>Developer | Technical Support | Future Full-Stack</p>
-    </section>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="skin-wrapper">
+      <div class="mc-character" aria-hidden="true">
+        <div class="mc-head">
+          <div class="mc-hair"></div>
+        </div>
+        <div class="mc-body"></div>
+        <div class="mc-legs">
+          <div class="mc-leg"></div>
+          <div class="mc-leg"></div>
+        </div>
+      </div>
+    </div>
 
-    <section class="block links-block">
-      <a href="#">🌍 Portfolio (Coming Soon)</a>
-      <a href="#">💼 LinkedIn</a>
-      <a href="#">🐙 GitHub</a>
-      <a href="mailto:st3144@utr.edu.mx">📧 Contact</a>
-    </section>
+    <h1 class="hero-title">JOSUE TRUJILLO<br>ZENON</h1>
+    <p class="hero-subtitle">[ Software Developer & Technical Support ]<span class="blink">█</span></p>
+    <p class="hero-desc">
+      Full-stack dev en misión. React, Node, PHP, Python.<br>
+      Crafteando soluciones desde Aguascalientes, México. 🇲🇽
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="mc-btn mc-btn-green">▶ VER PROYECTOS</a>
+      <a href="#contact" class="mc-btn mc-btn-blue">✉ CONTACTAR</a>
+    </div>
+  </div>
+</section>
 
-    <section class="block about-block">
-      <h2>📜 About Me</h2>
-      <p>
-        I'm a developer navigating the world of code like Minecraft — building, fixing, and optimizing.
-        Experienced in tech support and passionate about creating scalable applications.
+<!-- TERRAIN DIVIDER -->
+<div class="terrain-divider">
+  <div class="terrain-block"></div><div class="terrain-block"></div><div class="terrain-block"></div>
+  <div class="terrain-block"></div><div class="terrain-block"></div><div class="terrain-block"></div>
+  <div class="terrain-block"></div><div class="terrain-block"></div>
+</div>
+
+<!-- ABOUT -->
+<div class="section-wrapper">
+<section id="about">
+  <h2 class="section-title">
+    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
+      <rect x="2" y="2" width="12" height="12" fill="#c9a87a"/>
+      <rect x="4" y="4" width="3" height="3" fill="#4a6aa0"/>
+      <rect x="9" y="4" width="3" height="3" fill="#4a6aa0"/>
+      <rect x="5" y="9" width="6" height="2" fill="#8b4b2c"/>
+    </svg>
+    ABOUT ME
+  </h2>
+  <div class="about-card">
+    <div>
+      <p class="about-text">
+        Desarrollador de software con experiencia en <span style="color:var(--mc-diamond)">soporte técnico</span>, 
+        <span style="color:var(--mc-emerald)">desarrollo front-end</span>, y resolución de problemas.<br><br>
+        Actualmente cursando Ingeniería en Gestión y Desarrollo de Software mientras trabajo como 
+        <span style="color:var(--mc-gold)">Front-End Developer</span> en Universidad Tecnológica El Retoño bajo el programa de Educación Dual.<br><br>
+        Mi stack: React, Node.js, PHP, Python, MySQL y más. Siempre aprendiendo, siempre buildando.
       </p>
-    </section>
-
-    <section class="block skills-block">
-      <h2>🧱 Tech Blocks</h2>
-      <div class="grid">
-        <div class="cube">Java</div>
-        <div class="cube">JS</div>
-        <div class="cube">React</div>
-        <div class="cube">Node</div>
-        <div class="cube">Python</div>
-        <div class="cube">PHP</div>
-        <div class="cube">MySQL</div>
-        <div class="cube">SQL</div>
+    </div>
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <span>Aguascalientes, México</span>
       </div>
-    </section>
-
-    <section class="block projects-block">
-      <h2>🏗️ Projects</h2>
-      <div class="grid">
-        <div class="cube large">Incident App</div>
-        <div class="cube large">React Carousel</div>
-        <div class="cube large">Cloud Project</div>
+      <div class="info-item">
+        <span class="info-icon">📧</span>
+        <span>st3144@utr.edu.mx</span>
       </div>
-    </section>
+      <div class="info-item">
+        <span class="info-icon">📞</span>
+        <span>+52 449 434 7628</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🎮</span>
+        <span>10° Cuatrimestre activo</span>
+      </div>
+      <div class="lang-grid">
+        <div class="lang-badge">
+          <div class="lang-name">ES</div>
+          <div class="lang-level">Nativo</div>
+        </div>
+        <div class="lang-badge">
+          <div class="lang-name">EN</div>
+          <div class="lang-level">B2 CEFR</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
 
-    <footer class="block footer-block">
-      <p>🌙 "Still crafting..."</p>
-    </footer>
+<!-- SKILLS -->
+<div class="section-wrapper">
+<section id="skills">
+  <h2 class="section-title">
+    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
+      <rect width="16" height="16" fill="#4fc3f7" opacity="0.3"/>
+      <rect x="2" y="6" width="12" height="4" fill="#4fc3f7"/>
+      <rect x="6" y="2" width="4" height="12" fill="#4fc3f7"/>
+    </svg>
+    SKILL INVENTORY
+  </h2>
+  <div class="skills-grid">
+    <div class="skill-category languages">
+      <div class="skill-cat-title">◆ LENGUAJES & FRAMEWORKS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">Tailwind</span>
+        <span class="skill-tag">Astro</span>
+      </div>
+    </div>
+    <div class="skill-category databases">
+      <div class="skill-cat-title">◆ BASES DE DATOS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">SQL Server 2012</span>
+      </div>
+    </div>
+    <div class="skill-category tools">
+      <div class="skill-cat-title">◆ HERRAMIENTAS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">CentOS 7</span>
+        <span class="skill-tag">WebVR (A-Frame)</span>
+        <span class="skill-tag">MS Office</span>
+        <span class="skill-tag">IDEs</span>
+      </div>
+    </div>
+    <div class="skill-category methods">
+      <div class="skill-cat-title">◆ METODOLOGÍAS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">SCRUM</span>
+        <span class="skill-tag">Agile</span>
+        <span class="skill-tag">Sprint Planning</span>
+        <span class="skill-tag">Backlog</span>
+        <span class="skill-tag">Stand-ups</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section-wrapper">
+<section id="experience">
+  <h2 class="section-title">
+    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
+      <rect x="1" y="3" width="14" height="10" fill="#9e7b3c"/>
+      <rect x="1" y="3" width="14" height="3" fill="#c4a060"/>
+      <rect x="6" y="2" width="4" height="2" fill="#7a5e2c"/>
+    </svg>
+    EXPERIENCE LOG
+  </h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="job-title">FRONT-END DEVELOPER – DUAL EDUCATION</div>
+      <div class="job-company">🏫 Universidad Tecnológica El Retoño</div>
+      <div class="job-period">📅 2025 – Presente · Aguascalientes, MX</div>
+      <ul class="job-desc">
+        <li>Desarrollé componentes front-end para el sitio oficial usando <span style="color:var(--mc-diamond)">React, Astro, Tailwind CSS y JavaScript</span></li>
+        <li>Colaboré con diseñadores y backend devs bajo framework <span style="color:var(--mc-gold)">SCRUM</span></li>
+        <li>Participé en sprint planning, refinamiento de backlog y daily stand-ups</li>
+        <li>Construí UI components responsivos siguiendo arquitectura basada en componentes</li>
+        <li>Contribuí a optimización de performance y consistencia de diseño</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <div class="job-title">REPAIR SPECIALIST & CUSTOMER SERVICE</div>
+      <div class="job-company">📞 Teleperformance</div>
+      <div class="job-period">📅 2021 – Enero 2025 · Aguascalientes, MX</div>
+      <ul class="job-desc">
+        <li>Soporte técnico y troubleshooting cumpliendo estándares de calidad</li>
+        <li>Resolví inquiries de clientes contribuyendo a altos niveles de satisfacción</li>
+        <li>Analicé y corregí discrepancias de facturación con el dpto. financiero</li>
+        <li>Diseñé y dicté <span style="color:var(--mc-gold)">sesiones de capacitación</span> para nuevos agentes</li>
+        <li>Trabajo bajo presión cumpliendo métricas de performance y calidad</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- PROJECTS -->
+<div class="section-wrapper">
+<section id="projects">
+  <h2 class="section-title">
+    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
+      <rect width="16" height="16" fill="#2ecc71" opacity="0.2"/>
+      <rect x="1" y="5" width="6" height="6" fill="#2ecc71"/>
+      <rect x="9" y="5" width="6" height="6" fill="#2ecc71"/>
+      <rect x="5" y="1" width="6" height="6" fill="#ffd700"/>
+    </svg>
+    PROJECTS CHEST
+  </h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-title">DIGITAL LEGAL MANAGEMENT SYSTEM</div>
+      <div class="project-place">🏛 DIF Estatal de Aguascalientes · 2024</div>
+      <ul class="project-desc">
+        <li>Sistema digital de gestión de casos legales</li>
+        <li>Centralización de información y optimización de procesos internos</li>
+        <li>Generación automatizada de reportes PDF</li>
+        <li>Seguridad de datos mejorada</li>
+      </ul>
+      <div style="margin-top: 0.75rem;">
+        <span class="impact-badge">⬇ Búsqueda -80%</span>
+        <span class="impact-badge" style="background:var(--mc-diamond); margin-left:4px;">◆ Errores -90%</span>
+      </div>
+      <div class="project-tags">
+        <span class="tech-tag">PHP</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">HTML/CSS</span>
+        <span class="tech-tag">SQL Server</span>
+        <span class="tech-tag">SCRUM</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">VR SHOOTER – OCULUS QUEST 3</div>
+      <div class="project-place">🥽 Virtual Reality Game</div>
+      <ul class="project-desc">
+        <li>Shooter interactivo en VR con A-Frame WebVR</li>
+        <li>Mecánicas de puntos de vida y objetivos interactivos</li>
+        <li>Área de juego configurable (mappable playable area)</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tech-tag">A-Frame</span>
+        <span class="tech-tag">WebVR</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Oculus Quest 3</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">WEB APPS & API INTEGRATION</div>
+      <div class="project-place">🌐 Web Development Projects</div>
+      <ul class="project-desc">
+        <li>Aplicaciones web con JS, HTML, CSS y APIs externas</li>
+        <li>Bases de datos MySQL en VMs con CentOS 7</li>
+        <li>Arquitectura full-stack con integración de servicios</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">HTML/CSS</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">CentOS 7</span>
+        <span class="tech-tag">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">UNIVERSITY WEBSITE – UTR</div>
+      <div class="project-place">🏫 Universidad Tecnológica El Retoño</div>
+      <ul class="project-desc">
+        <li>Sitio oficial universitario con componentes modulares</li>
+        <li>UI responsiva con component-based architecture</li>
+        <li>Optimización de performance y consistencia de diseño</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Astro</span>
+        <span class="tech-tag">Tailwind</span>
+        <span class="tech-tag">JavaScript</span>
+      </div>
+    </div>
 
   </div>
+</section>
+</div>
+
+<!-- EDUCATION & CERTS -->
+<div class="section-wrapper">
+<section id="education">
+  <h2 class="section-title">
+    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
+      <polygon points="8,1 15,5 8,9 1,5" fill="#ffd700"/>
+      <rect x="3" y="8" width="10" height="6" fill="#9e7b3c"/>
+      <rect x="12" y="5" width="2" height="8" fill="#7a5e2c"/>
+    </svg>
+    EDUCATION & CERTS
+  </h2>
+
+  <div class="edu-grid">
+    <div class="edu-card current">
+      <span class="current-badge">ACTIVO</span>
+      <div class="edu-degree">INGENIERÍA EN GESTIÓN Y DESARROLLO DE SOFTWARE</div>
+      <div class="edu-school">Universidad Tecnológica El Retoño</div>
+      <div class="edu-year">📅 2025 – Presente | 10° Cuatrimestre</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-degree">TSU – DESARROLLO DE SOFTWARE MULTIPLATAFORMA</div>
+      <div class="edu-school">Universidad Tecnológica El Retoño</div>
+      <div class="edu-year">📅 2020 – 2024</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-degree">TÉCNICO PROGRAMADOR</div>
+      <div class="edu-school">CBTis 284 – Aguascalientes</div>
+      <div class="edu-year">📅 2017 – 2020</div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Press Start 2P',monospace; font-size:12px; color:var(--mc-gold); margin: 2.5rem 0 1rem;">
+    ✦ CERTIFICACIONES
+  </h3>
+
+  <div class="certs-grid">
+    <div class="cert-card">
+      <span class="cert-icon">🎓</span>
+      <div>
+        <div class="cert-name">RED HAT APP DEV I:<br>PROGRAMMING IN JAVA EE</div>
+        <div class="cert-issuer">Red Hat · Mayo 2025 · AD183–RHA</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <span class="cert-icon">📋</span>
+      <div>
+        <div class="cert-name">SCRUM FUNDAMENTALS<br>CERTIFIED (SFC)</div>
+        <div class="cert-issuer">SCRUMstudy</div>
+      </div>
+    </div>
+    <div class="cert-card">
+      <span class="cert-icon">🐙</span>
+      <div>
+        <div class="cert-name">GITHUB FOUNDATIONS</div>
+        <div class="cert-issuer">Udemy</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+</div>
+
+<!-- CONTACT -->
+<div class="section-wrapper">
+<section id="contact">
+  <h2 class="section-title" style="justify-content:center;">
+    ✉ CONTACT
+  </h2>
+  <div class="contact-box">
+    <div class="contact-title">¿LISTO PARA JUGAR EN EQUIPO?</div>
+    <p class="contact-desc">
+      Open to nuevas oportunidades en desarrollo full-stack,<br>
+      web dev o soporte técnico. Let's build something epic.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:st3144@utr.edu.mx" class="contact-link">
+        📧 st3144@utr.edu.mx
+      </a>
+      <a href="tel:+524494347628" class="contact-link">
+        📞 +52 449 434 7628
+      </a>
+      <a href="https://github.com/" target="_blank" class="contact-link">
+        🐙 GitHub
+      </a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>⚔ Josue Trujillo Zenon &nbsp;|&nbsp; Crafted with ❤ in Aguascalientes, México &nbsp;|&nbsp; 2025</p>
+  <p style="margin-top:0.5rem; font-size:13px;">Built with HTML · CSS · Vanilla JS &nbsp;–&nbsp; No frameworks needed for true blocky power.</p>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  const items = document.querySelectorAll('.timeline-item, .project-card, .edu-card, .cert-card, .skill-category');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.style.opacity = '1';
+        en.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  items.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    obs.observe(el);
+  });
+</script>
 </body>
 </html>
