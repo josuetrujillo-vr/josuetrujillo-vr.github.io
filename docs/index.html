@@ -3,15 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Josue Trujillo – Portfolio</title>
-<link rel="stylesheet" href="assets/style.css" />
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+<title>Josue Trujillo Zenon – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400;700&family=Press+Start+2P&family=IM+Fell+English&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <span class="nav-logo">⚔ JTZ.DEV</span>
+  <div class="nav-logo">
+    <svg class="nav-emblem" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="14" cy="14" r="12" stroke="#c8a84b" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="14" cy="14" r="8" stroke="#74c2a8" stroke-width="0.6" opacity="0.5"/>
+      <polygon points="14,4 18,11 24,11 19,16 21,23 14,18 7,23 9,16 4,11 10,11" fill="none" stroke="#c8a84b" stroke-width="0.8" opacity="0.7"/>
+      <circle cx="14" cy="14" r="2" fill="#c8a84b" opacity="0.8"/>
+    </svg>
+    JTZ.DEV
+  </div>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -24,403 +32,501 @@
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-content">
-    <div class="skin-wrapper">
-      <div class="mc-character" aria-hidden="true">
-        <div class="mc-head">
-          <div class="mc-hair"></div>
-        </div>
-        <div class="mc-body"></div>
-        <div class="mc-legs">
-          <div class="mc-leg"></div>
-          <div class="mc-leg"></div>
-        </div>
+  <div class="character-frame">
+    <div class="genshin-ring"></div>
+    <div class="mc-char">
+      <div class="mc-head">
+        <div class="mc-hair"></div>
+        <div class="mc-eyes"><div class="mc-eye"></div><div class="mc-eye"></div></div>
+        <div class="mc-mouth"></div>
       </div>
+      <div class="mc-body"><div class="mc-body-stripe"></div></div>
+      <div class="mc-legs"><div class="mc-leg"></div><div class="mc-leg"></div></div>
     </div>
+  </div>
 
-    <h1 class="hero-title">JOSUE TRUJILLO<br>ZENON</h1>
-    <p class="hero-subtitle">[ Software Developer & Technical Support ]<span class="blink">█</span></p>
-    <p class="hero-desc">
-      Full-stack dev en misión. React, Node, PHP, Python.<br>
-      Crafteando soluciones desde Aguascalientes, México. 🇲🇽
-    </p>
-    <div class="hero-buttons">
-      <a href="#projects" class="mc-btn mc-btn-green">▶ VER PROYECTOS</a>
-      <a href="#contact" class="mc-btn mc-btn-blue">✉ CONTACTAR</a>
-    </div>
+  <h1 class="hero-name">Josue Trujillo<br>Zenon</h1>
+  <p class="hero-title-text">Software Developer &nbsp;&middot;&nbsp; Technical Specialist</p>
+
+  <div class="hero-element-row">
+    <span class="element-badge el-anemo">React</span>
+    <span class="element-badge el-geo">Node.js</span>
+    <span class="element-badge el-electro">PHP</span>
+    <span class="element-badge el-cryo">Python</span>
+    <span class="element-badge el-hydro">MySQL</span>
+    <span class="element-badge el-pyro">Java</span>
+  </div>
+
+  <p class="hero-desc">
+    Full-stack developer &amp; Technical Support.<br>
+    <em>Crafting</em> solutions from Aguascalientes, Mexico.<br>
+    Engineering in Software &mdash; 10th quarter active.
+  </p>
+
+  <div class="hero-cta">
+    <a href="#projects" class="g-btn g-btn-gold">View Projects</a>
+    <a href="#contact" class="g-btn g-btn-anemo">Contact</a>
   </div>
 </section>
 
-<!-- TERRAIN DIVIDER -->
-<div class="terrain-divider">
-  <div class="terrain-block"></div><div class="terrain-block"></div><div class="terrain-block"></div>
-  <div class="terrain-block"></div><div class="terrain-block"></div><div class="terrain-block"></div>
-  <div class="terrain-block"></div><div class="terrain-block"></div>
+<!-- PIXEL TERRAIN -->
+<div class="terrain">
+  <div class="terrain-b"></div><div class="terrain-b"></div><div class="terrain-b"></div>
+  <div class="terrain-b"></div><div class="terrain-b"></div><div class="terrain-b"></div>
+  <div class="terrain-b"></div><div class="terrain-b"></div>
 </div>
 
 <!-- ABOUT -->
-<div class="section-wrapper">
 <section id="about">
-  <h2 class="section-title">
-    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
-      <rect x="2" y="2" width="12" height="12" fill="#c9a87a"/>
-      <rect x="4" y="4" width="3" height="3" fill="#4a6aa0"/>
-      <rect x="9" y="4" width="3" height="3" fill="#4a6aa0"/>
-      <rect x="5" y="9" width="6" height="2" fill="#8b4b2c"/>
+  <h2 class="section-title reveal">
+    <svg class="section-title-icon" viewBox="0 0 28 28" fill="none">
+      <circle cx="14" cy="10" r="5" stroke="#c8a84b" stroke-width="1"/>
+      <path d="M5 24c0-5 4-8 9-8s9 3 9 8" stroke="#c8a84b" stroke-width="1" fill="none"/>
     </svg>
-    ABOUT ME
+    Traveler Profile
   </h2>
-  <div class="about-card">
-    <div>
-      <p class="about-text">
-        Desarrollador de software con experiencia en <span style="color:var(--mc-diamond)">soporte técnico</span>, 
-        <span style="color:var(--mc-emerald)">desarrollo front-end</span>, y resolución de problemas.<br><br>
-        Actualmente cursando Ingeniería en Gestión y Desarrollo de Software mientras trabajo como 
-        <span style="color:var(--mc-gold)">Front-End Developer</span> en Universidad Tecnológica El Retoño bajo el programa de Educación Dual.<br><br>
-        Mi stack: React, Node.js, PHP, Python, MySQL y más. Siempre aprendiendo, siempre buildando.
-      </p>
+  <div class="about-grid">
+    <div class="about-lore reveal">
+      Developer with experience in <strong>technical support</strong> and <em>front-end development</em>.
+      Currently working as Front-End Developer at Universidad Tecnol&oacute;gica El Reto&ntilde;o under the Dual Education program, while finishing his Engineering degree in Software Development.
+      <br><br>
+      His journey spans from customer service excellence at Teleperformance to building production-grade web systems for government institutions. A <strong>problem-solver</strong> by nature, skilled in both the craft of code and the discipline of collaboration.
+      <br><br>
+      <span style="display:flex;gap:8px;flex-wrap:wrap;margin-top:0.5rem;">
+        <span class="pixel-chip chip-grass">SCRUM</span>
+        <span class="pixel-chip chip-geo">Agile</span>
+        <span class="pixel-chip chip-anemo">B2 English</span>
+        <span class="pixel-chip chip-electro">Linux</span>
+      </span>
     </div>
-    <div class="info-grid">
-      <div class="info-item">
-        <span class="info-icon">📍</span>
-        <span>Aguascalientes, México</span>
+    <div class="stat-panel reveal">
+      <div class="stat-row">
+        <svg class="stat-icon" viewBox="0 0 22 22" fill="none">
+          <path d="M11 2C7 2 4 6 4 10c0 5 7 10 7 10s7-5 7-10c0-4-3-8-7-8z" stroke="#74c2a8" stroke-width="1" fill="none"/>
+          <circle cx="11" cy="10" r="2.5" stroke="#74c2a8" stroke-width="1"/>
+        </svg>
+        <span class="stat-label">Location</span>
+        <span class="stat-val">Aguascalientes, MX</span>
       </div>
-      <div class="info-item">
-        <span class="info-icon">📧</span>
-        <span>st3144@utr.edu.mx</span>
+      <div class="stat-row">
+        <svg class="stat-icon" viewBox="0 0 22 22" fill="none">
+          <rect x="3" y="5" width="16" height="12" rx="1" stroke="#c8a84b" stroke-width="1"/>
+          <path d="M3 8l8 6 8-6" stroke="#c8a84b" stroke-width="1" fill="none"/>
+        </svg>
+        <span class="stat-label">Email</span>
+        <span class="stat-val" style="font-size:14px;">st3144@utr.edu.mx</span>
       </div>
-      <div class="info-item">
-        <span class="info-icon">📞</span>
-        <span>+52 449 434 7628</span>
+      <div class="stat-row">
+        <svg class="stat-icon" viewBox="0 0 22 22" fill="none">
+          <path d="M5 4h4l2 5-2.5 1.5A12 12 0 0013 16.5L14.5 14l5 2v4a2 2 0 01-2 2C8 22 2 14 2 6a2 2 0 012-2z" stroke="#c8a84b" stroke-width="1" fill="none"/>
+        </svg>
+        <span class="stat-label">Phone</span>
+        <span class="stat-val">+52 449 434 7628</span>
       </div>
-      <div class="info-item">
-        <span class="info-icon">🎮</span>
-        <span>10° Cuatrimestre activo</span>
+      <div class="stat-row">
+        <svg class="stat-icon" viewBox="0 0 22 22" fill="none">
+          <path d="M4 4h14v14H4z" stroke="#b07fd4" stroke-width="1" fill="none"/>
+          <path d="M4 8h14M4 12h14M8 4v14" stroke="#b07fd4" stroke-width="0.8" fill="none"/>
+        </svg>
+        <span class="stat-label">Quarter</span>
+        <span class="stat-val">10th &mdash; Active</span>
       </div>
-      <div class="lang-grid">
-        <div class="lang-badge">
-          <div class="lang-name">ES</div>
-          <div class="lang-level">Nativo</div>
+      <div class="lang-row">
+        <div class="lang-box">
+          <span class="lang-code">ES</span>
+          <span class="lang-level">Native</span>
         </div>
-        <div class="lang-badge">
-          <div class="lang-name">EN</div>
-          <div class="lang-level">B2 CEFR</div>
+        <div class="lang-box">
+          <span class="lang-code">EN</span>
+          <span class="lang-level">B2 CEFR</span>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<div class="rune-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <circle cx="16" cy="16" r="10" stroke="#c8a84b" stroke-width="0.8" opacity="0.5"/>
+    <polygon points="16,6 20,13 27,13 21,18 23,25 16,20 9,25 11,18 5,13 12,13" fill="none" stroke="#c8a84b" stroke-width="0.8" opacity="0.6"/>
+  </svg>
 </div>
 
 <!-- SKILLS -->
-<div class="section-wrapper">
 <section id="skills">
-  <h2 class="section-title">
-    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
-      <rect width="16" height="16" fill="#4fc3f7" opacity="0.3"/>
-      <rect x="2" y="6" width="12" height="4" fill="#4fc3f7"/>
-      <rect x="6" y="2" width="4" height="12" fill="#4fc3f7"/>
+  <h2 class="section-title reveal">
+    <svg class="section-title-icon" viewBox="0 0 28 28" fill="none">
+      <polygon points="14,3 17,10 24,10 18,15 21,22 14,17 7,22 10,15 4,10 11,10" stroke="#c8a84b" stroke-width="1" fill="none"/>
     </svg>
-    SKILL INVENTORY
+    Vision &amp; Skills
   </h2>
-  <div class="skills-grid">
-    <div class="skill-category languages">
-      <div class="skill-cat-title">◆ LENGUAJES & FRAMEWORKS</div>
+  <div class="vision-grid">
+    <div class="vision-card vc-anemo reveal">
+      <div class="vision-header">
+        <svg class="vision-el-icon" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="9" stroke="#74c2a8" stroke-width="1"/>
+          <path d="M12 6c-3 3-3 9 0 12M12 6c3 3 3 9 0 12" stroke="#74c2a8" stroke-width="0.8" fill="none"/>
+          <circle cx="12" cy="12" r="2" stroke="#74c2a8" stroke-width="1"/>
+        </svg>
+        <span class="vision-title">Languages &amp; Frameworks</span>
+      </div>
       <div class="skill-tags">
-        <span class="skill-tag">Java</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Node.js</span>
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">PHP</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">Tailwind</span>
-        <span class="skill-tag">Astro</span>
+        <span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Node.js</span><span class="skill-tag">React</span>
+        <span class="skill-tag">PHP</span><span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+        <span class="skill-tag">Tailwind</span><span class="skill-tag">Astro</span>
       </div>
     </div>
-    <div class="skill-category databases">
-      <div class="skill-cat-title">◆ BASES DE DATOS</div>
+    <div class="vision-card vc-geo reveal">
+      <div class="vision-header">
+        <svg class="vision-el-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3L21 8v8L12 21 3 16V8z" stroke="#c9943a" stroke-width="1" fill="none"/>
+          <circle cx="12" cy="12" r="3" stroke="#c9943a" stroke-width="1"/>
+        </svg>
+        <span class="vision-title">Databases</span>
+      </div>
       <div class="skill-tags">
         <span class="skill-tag">MySQL</span>
         <span class="skill-tag">SQL Server 2012</span>
       </div>
     </div>
-    <div class="skill-category tools">
-      <div class="skill-cat-title">◆ HERRAMIENTAS</div>
+    <div class="vision-card vc-electro reveal">
+      <div class="vision-header">
+        <svg class="vision-el-icon" viewBox="0 0 24 24" fill="none">
+          <polygon points="12,2 14,10 22,10 16,15 18,23 12,18 6,23 8,15 2,10 10,10" fill="none" stroke="#b07fd4" stroke-width="1"/>
+        </svg>
+        <span class="vision-title">Tools &amp; Platforms</span>
+      </div>
       <div class="skill-tags">
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">GitHub</span>
-        <span class="skill-tag">Linux</span>
-        <span class="skill-tag">CentOS 7</span>
-        <span class="skill-tag">WebVR (A-Frame)</span>
+        <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Linux</span><span class="skill-tag">CentOS 7</span>
+        <span class="skill-tag">WebVR</span><span class="skill-tag">A-Frame</span>
         <span class="skill-tag">MS Office</span>
-        <span class="skill-tag">IDEs</span>
       </div>
     </div>
-    <div class="skill-category methods">
-      <div class="skill-cat-title">◆ METODOLOGÍAS</div>
+    <div class="vision-card vc-cryo reveal">
+      <div class="vision-header">
+        <svg class="vision-el-icon" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="9" stroke="#9fcfe8" stroke-width="1"/>
+          <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" stroke="#9fcfe8" stroke-width="0.7"/>
+          <circle cx="12" cy="12" r="2.5" stroke="#9fcfe8" stroke-width="1"/>
+        </svg>
+        <span class="vision-title">Methodologies</span>
+      </div>
       <div class="skill-tags">
-        <span class="skill-tag">SCRUM</span>
-        <span class="skill-tag">Agile</span>
-        <span class="skill-tag">Sprint Planning</span>
-        <span class="skill-tag">Backlog</span>
+        <span class="skill-tag">SCRUM</span><span class="skill-tag">Agile</span>
+        <span class="skill-tag">Sprint Plan.</span><span class="skill-tag">Backlog</span>
         <span class="skill-tag">Stand-ups</span>
       </div>
     </div>
   </div>
 </section>
+
+<!-- TERRAIN -->
+<div class="terrain">
+  <div class="terrain-b"></div><div class="terrain-b"></div><div class="terrain-b"></div>
+  <div class="terrain-b"></div><div class="terrain-b"></div><div class="terrain-b"></div>
 </div>
 
 <!-- EXPERIENCE -->
-<div class="section-wrapper">
 <section id="experience">
-  <h2 class="section-title">
-    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
-      <rect x="1" y="3" width="14" height="10" fill="#9e7b3c"/>
-      <rect x="1" y="3" width="14" height="3" fill="#c4a060"/>
-      <rect x="6" y="2" width="4" height="2" fill="#7a5e2c"/>
+  <h2 class="section-title reveal">
+    <svg class="section-title-icon" viewBox="0 0 28 28" fill="none">
+      <rect x="4" y="10" width="20" height="14" rx="1" stroke="#c8a84b" stroke-width="1"/>
+      <path d="M10 10V7a4 4 0 018 0v3" stroke="#c8a84b" stroke-width="1" fill="none"/>
+      <line x1="14" y1="15" x2="14" y2="19" stroke="#74c2a8" stroke-width="1"/>
     </svg>
-    EXPERIENCE LOG
+    Adventure Log
   </h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="job-title">FRONT-END DEVELOPER – DUAL EDUCATION</div>
-      <div class="job-company">🏫 Universidad Tecnológica El Retoño</div>
-      <div class="job-period">📅 2025 – Presente · Aguascalientes, MX</div>
-      <ul class="job-desc">
-        <li>Desarrollé componentes front-end para el sitio oficial usando <span style="color:var(--mc-diamond)">React, Astro, Tailwind CSS y JavaScript</span></li>
-        <li>Colaboré con diseñadores y backend devs bajo framework <span style="color:var(--mc-gold)">SCRUM</span></li>
-        <li>Participé en sprint planning, refinamiento de backlog y daily stand-ups</li>
-        <li>Construí UI components responsivos siguiendo arquitectura basada en componentes</li>
-        <li>Contribuí a optimización de performance y consistencia de diseño</li>
+  <div class="log-timeline">
+    <div class="log-item reveal">
+      <div class="log-job">Front-End Developer &mdash; Dual Education</div>
+      <div class="log-company">Universidad Tecnol&oacute;gica El Reto&ntilde;o</div>
+      <div class="log-period">2025 &mdash; Present &nbsp;&middot;&nbsp; Aguascalientes, MX</div>
+      <ul class="log-desc">
+        <li>Built front-end components for the official university site using <span style="color:var(--anemo)">React, Astro, Tailwind CSS</span> and JavaScript</li>
+        <li>Collaborated with designers and backend devs under the <span style="color:var(--gold)">SCRUM</span> framework</li>
+        <li>Sprint planning, backlog refinement and daily stand-ups</li>
+        <li>Responsive, modular UI following component-based architecture</li>
+        <li>Contributed to performance optimization and design consistency</li>
       </ul>
     </div>
-    <div class="timeline-item">
-      <div class="job-title">REPAIR SPECIALIST & CUSTOMER SERVICE</div>
-      <div class="job-company">📞 Teleperformance</div>
-      <div class="job-period">📅 2021 – Enero 2025 · Aguascalientes, MX</div>
-      <ul class="job-desc">
-        <li>Soporte técnico y troubleshooting cumpliendo estándares de calidad</li>
-        <li>Resolví inquiries de clientes contribuyendo a altos niveles de satisfacción</li>
-        <li>Analicé y corregí discrepancias de facturación con el dpto. financiero</li>
-        <li>Diseñé y dicté <span style="color:var(--mc-gold)">sesiones de capacitación</span> para nuevos agentes</li>
-        <li>Trabajo bajo presión cumpliendo métricas de performance y calidad</li>
+    <div class="log-item reveal">
+      <div class="log-job">Repair Specialist &amp; Customer Service</div>
+      <div class="log-company">Teleperformance</div>
+      <div class="log-period">2021 &mdash; January 2025 &nbsp;&middot;&nbsp; Aguascalientes, MX</div>
+      <ul class="log-desc">
+        <li>Technical support and troubleshooting meeting quality and response-time standards</li>
+        <li>Resolved customer inquiries contributing to high satisfaction levels</li>
+        <li>Analyzed and corrected billing discrepancies with the finance department</li>
+        <li>Designed and delivered <span style="color:var(--gold)">training sessions</span> for new agents</li>
+        <li>Worked under pressure meeting performance and quality metrics</li>
       </ul>
     </div>
   </div>
 </section>
+
+<div class="rune-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <rect x="12" y="4" width="8" height="8" stroke="#c9943a" stroke-width="0.8" transform="rotate(45 16 8)" fill="none"/>
+    <circle cx="16" cy="22" r="5" stroke="#74c2a8" stroke-width="0.8" fill="none"/>
+    <line x1="16" y1="12" x2="16" y2="17" stroke="#c8a84b" stroke-width="0.8" opacity="0.5"/>
+  </svg>
 </div>
 
 <!-- PROJECTS -->
-<div class="section-wrapper">
 <section id="projects">
-  <h2 class="section-title">
-    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
-      <rect width="16" height="16" fill="#2ecc71" opacity="0.2"/>
-      <rect x="1" y="5" width="6" height="6" fill="#2ecc71"/>
-      <rect x="9" y="5" width="6" height="6" fill="#2ecc71"/>
-      <rect x="5" y="1" width="6" height="6" fill="#ffd700"/>
+  <h2 class="section-title reveal">
+    <svg class="section-title-icon" viewBox="0 0 28 28" fill="none">
+      <rect x="3" y="10" width="22" height="14" rx="1" stroke="#c9943a" stroke-width="1"/>
+      <rect x="3" y="10" width="22" height="4" rx="0" stroke="#c9943a" stroke-width="0.5" fill="none"/>
+      <path d="M11 7h6" stroke="#c8a84b" stroke-width="1.5" stroke-linecap="round"/>
     </svg>
-    PROJECTS CHEST
+    Artifact Collection
   </h2>
-  <div class="projects-grid">
+  <div class="artifact-grid">
 
-    <div class="project-card">
-      <div class="project-title">DIGITAL LEGAL MANAGEMENT SYSTEM</div>
-      <div class="project-place">🏛 DIF Estatal de Aguascalientes · 2024</div>
-      <ul class="project-desc">
-        <li>Sistema digital de gestión de casos legales</li>
-        <li>Centralización de información y optimización de procesos internos</li>
-        <li>Generación automatizada de reportes PDF</li>
-        <li>Seguridad de datos mejorada</li>
-      </ul>
-      <div style="margin-top: 0.75rem;">
-        <span class="impact-badge">⬇ Búsqueda -80%</span>
-        <span class="impact-badge" style="background:var(--mc-diamond); margin-left:4px;">◆ Errores -90%</span>
+    <div class="artifact-card reveal">
+      <div class="artifact-rarity">
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
       </div>
-      <div class="project-tags">
-        <span class="tech-tag">PHP</span>
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">HTML/CSS</span>
-        <span class="tech-tag">SQL Server</span>
-        <span class="tech-tag">SCRUM</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-title">VR SHOOTER – OCULUS QUEST 3</div>
-      <div class="project-place">🥽 Virtual Reality Game</div>
-      <ul class="project-desc">
-        <li>Shooter interactivo en VR con A-Frame WebVR</li>
-        <li>Mecánicas de puntos de vida y objetivos interactivos</li>
-        <li>Área de juego configurable (mappable playable area)</li>
+      <div class="artifact-name">Digital Legal Management System</div>
+      <div class="artifact-set">DIF Estatal de Aguascalientes &middot; 2024</div>
+      <ul class="artifact-desc">
+        <li>Digital case management system for legal records</li>
+        <li>Centralized information &amp; optimized internal processes</li>
+        <li>Automated PDF report generation</li>
+        <li>Enhanced data security architecture</li>
       </ul>
-      <div class="project-tags">
-        <span class="tech-tag">A-Frame</span>
-        <span class="tech-tag">WebVR</span>
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">Oculus Quest 3</span>
+      <div class="impact-row">
+        <span class="impact-pill">Search time -80%</span>
+        <span class="impact-pill blue">Errors -90%</span>
+      </div>
+      <div class="tech-row">
+        <span class="tech-pill">PHP</span><span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">HTML/CSS</span><span class="tech-pill">SQL Server</span><span class="tech-pill">SCRUM</span>
       </div>
     </div>
 
-    <div class="project-card">
-      <div class="project-title">WEB APPS & API INTEGRATION</div>
-      <div class="project-place">🌐 Web Development Projects</div>
-      <ul class="project-desc">
-        <li>Aplicaciones web con JS, HTML, CSS y APIs externas</li>
-        <li>Bases de datos MySQL en VMs con CentOS 7</li>
-        <li>Arquitectura full-stack con integración de servicios</li>
+    <div class="artifact-card reveal">
+      <div class="artifact-rarity">
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#9fcfe8"/></svg>
+      </div>
+      <div class="artifact-name">VR Shooter &mdash; Oculus Quest 3</div>
+      <div class="artifact-set">Virtual Reality &middot; WebVR</div>
+      <ul class="artifact-desc">
+        <li>Interactive VR shooter using A-Frame WebVR</li>
+        <li>Life-point mechanics and interactive objectives</li>
+        <li>Configurable mappable play area</li>
       </ul>
-      <div class="project-tags">
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">HTML/CSS</span>
-        <span class="tech-tag">MySQL</span>
-        <span class="tech-tag">CentOS 7</span>
-        <span class="tech-tag">REST APIs</span>
+      <div class="tech-row" style="margin-top:1rem;">
+        <span class="tech-pill">A-Frame</span><span class="tech-pill">WebVR</span>
+        <span class="tech-pill">JavaScript</span><span class="tech-pill">Oculus Quest 3</span>
       </div>
     </div>
 
-    <div class="project-card">
-      <div class="project-title">UNIVERSITY WEBSITE – UTR</div>
-      <div class="project-place">🏫 Universidad Tecnológica El Retoño</div>
-      <ul class="project-desc">
-        <li>Sitio oficial universitario con componentes modulares</li>
-        <li>UI responsiva con component-based architecture</li>
-        <li>Optimización de performance y consistencia de diseño</li>
+    <div class="artifact-card reveal">
+      <div class="artifact-rarity">
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#9fcfe8"/></svg>
+      </div>
+      <div class="artifact-name">University Website &mdash; UTR</div>
+      <div class="artifact-set">Univ. Tecnol&oacute;gica El Reto&ntilde;o</div>
+      <ul class="artifact-desc">
+        <li>Official university site with modular components</li>
+        <li>Responsive UI following component-based architecture</li>
+        <li>Performance optimization and design consistency</li>
       </ul>
-      <div class="project-tags">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Astro</span>
-        <span class="tech-tag">Tailwind</span>
-        <span class="tech-tag">JavaScript</span>
+      <div class="tech-row" style="margin-top:1rem;">
+        <span class="tech-pill">React</span><span class="tech-pill">Astro</span>
+        <span class="tech-pill">Tailwind</span><span class="tech-pill">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="artifact-card reveal">
+      <div class="artifact-rarity">
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#c8a84b"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#9fcfe8"/></svg>
+        <svg class="artifact-star" viewBox="0 0 10 10"><polygon points="5,1 6.2,3.8 9,4 7,6 7.6,9 5,7.5 2.4,9 3,6 1,4 3.8,3.8" fill="#444"/></svg>
+      </div>
+      <div class="artifact-name">Web Apps &amp; API Integration</div>
+      <div class="artifact-set">Web Development Projects</div>
+      <ul class="artifact-desc">
+        <li>Web applications with JS, HTML, CSS and external APIs</li>
+        <li>MySQL databases on VMs running CentOS 7</li>
+        <li>Full-stack architecture with service integration</li>
+      </ul>
+      <div class="tech-row" style="margin-top:1rem;">
+        <span class="tech-pill">JavaScript</span><span class="tech-pill">HTML/CSS</span>
+        <span class="tech-pill">MySQL</span><span class="tech-pill">CentOS 7</span><span class="tech-pill">REST APIs</span>
       </div>
     </div>
 
   </div>
 </section>
+
+<!-- TERRAIN -->
+<div class="terrain">
+  <div class="terrain-b"></div><div class="terrain-b"></div><div class="terrain-b"></div>
+  <div class="terrain-b"></div><div class="terrain-b"></div><div class="terrain-b"></div>
 </div>
 
 <!-- EDUCATION & CERTS -->
-<div class="section-wrapper">
 <section id="education">
-  <h2 class="section-title">
-    <svg width="32" height="32" viewBox="0 0 16 16" class="title-icon" aria-hidden="true">
-      <polygon points="8,1 15,5 8,9 1,5" fill="#ffd700"/>
-      <rect x="3" y="8" width="10" height="6" fill="#9e7b3c"/>
-      <rect x="12" y="5" width="2" height="8" fill="#7a5e2c"/>
+  <h2 class="section-title reveal">
+    <svg class="section-title-icon" viewBox="0 0 28 28" fill="none">
+      <polygon points="14,4 24,9 14,14 4,9" stroke="#c8a84b" stroke-width="1" fill="none"/>
+      <path d="M4 9v8M24 9v8M14 14v8" stroke="#c8a84b" stroke-width="1"/>
+      <path d="M8 17c0 0 2 4 6 4s6-4 6-4" stroke="#74c2a8" stroke-width="1" fill="none"/>
     </svg>
-    EDUCATION & CERTS
+    Lore &amp; Ascension
   </h2>
 
   <div class="edu-grid">
-    <div class="edu-card current">
-      <span class="current-badge">ACTIVO</span>
-      <div class="edu-degree">INGENIERÍA EN GESTIÓN Y DESARROLLO DE SOFTWARE</div>
-      <div class="edu-school">Universidad Tecnológica El Retoño</div>
-      <div class="edu-year">📅 2025 – Presente | 10° Cuatrimestre</div>
+    <div class="edu-card active reveal">
+      <span class="edu-active-tag">Active</span>
+      <div class="edu-degree">Engineering in Software Management &amp; Development</div>
+      <div class="edu-school">Univ. Tecnol&oacute;gica El Reto&ntilde;o</div>
+      <div class="edu-year">2025 &mdash; Present &middot; 10th Quarter</div>
     </div>
-    <div class="edu-card">
-      <div class="edu-degree">TSU – DESARROLLO DE SOFTWARE MULTIPLATAFORMA</div>
-      <div class="edu-school">Universidad Tecnológica El Retoño</div>
-      <div class="edu-year">📅 2020 – 2024</div>
+    <div class="edu-card reveal">
+      <div class="edu-degree">TSU &mdash; Multiplatform Software Development</div>
+      <div class="edu-school">Univ. Tecnol&oacute;gica El Reto&ntilde;o</div>
+      <div class="edu-year">2020 &mdash; 2024</div>
     </div>
-    <div class="edu-card">
-      <div class="edu-degree">TÉCNICO PROGRAMADOR</div>
-      <div class="edu-school">CBTis 284 – Aguascalientes</div>
-      <div class="edu-year">📅 2017 – 2020</div>
+    <div class="edu-card reveal">
+      <div class="edu-degree">Programming Technician Diploma</div>
+      <div class="edu-school">CBTis 284 &mdash; Aguascalientes</div>
+      <div class="edu-year">2017 &mdash; 2020</div>
     </div>
   </div>
 
-  <h3 style="font-family:'Press Start 2P',monospace; font-size:12px; color:var(--mc-gold); margin: 2.5rem 0 1rem;">
-    ✦ CERTIFICACIONES
+  <h3 style="font-family:'Cinzel Decorative',serif; font-size:14px; color:var(--geo); margin:2.5rem 0 1rem; letter-spacing:2px;" class="reveal">
+    Obtained Constellations
   </h3>
 
-  <div class="certs-grid">
-    <div class="cert-card">
-      <span class="cert-icon">🎓</span>
+  <div class="cert-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon-wrap">
+        <svg viewBox="0 0 36 36" fill="none" width="36" height="36">
+          <circle cx="18" cy="18" r="14" stroke="#c9943a" stroke-width="1"/>
+          <path d="M12 18l4 4 8-8" stroke="#c9943a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <circle cx="18" cy="18" r="8" stroke="#c9943a" stroke-width="0.5" opacity="0.4"/>
+        </svg>
+      </div>
       <div>
-        <div class="cert-name">RED HAT APP DEV I:<br>PROGRAMMING IN JAVA EE</div>
-        <div class="cert-issuer">Red Hat · Mayo 2025 · AD183–RHA</div>
+        <div class="cert-name">Red Hat App Dev I &mdash; Java EE</div>
+        <div class="cert-issuer">Red Hat &middot; May 2025 &middot; AD183</div>
       </div>
     </div>
-    <div class="cert-card">
-      <span class="cert-icon">📋</span>
+    <div class="cert-card reveal">
+      <div class="cert-icon-wrap">
+        <svg viewBox="0 0 36 36" fill="none" width="36" height="36">
+          <polygon points="18,4 22,13 32,13 24,19 27,28 18,22 9,28 12,19 4,13 14,13" stroke="#c9943a" stroke-width="1" fill="none"/>
+          <circle cx="18" cy="18" r="3" fill="#c9943a" opacity="0.5"/>
+        </svg>
+      </div>
       <div>
-        <div class="cert-name">SCRUM FUNDAMENTALS<br>CERTIFIED (SFC)</div>
+        <div class="cert-name">SCRUM Fundamentals Certified</div>
         <div class="cert-issuer">SCRUMstudy</div>
       </div>
     </div>
-    <div class="cert-card">
-      <span class="cert-icon">🐙</span>
+    <div class="cert-card reveal">
+      <div class="cert-icon-wrap">
+        <svg viewBox="0 0 36 36" fill="none" width="36" height="36">
+          <circle cx="18" cy="12" r="6" stroke="#c9943a" stroke-width="1"/>
+          <path d="M18 18v5M10 28c0-4 4-7 8-7s8 3 8 7" stroke="#c9943a" stroke-width="1" fill="none"/>
+          <path d="M26 8l4-3M10 8l-4-3M18 6V3" stroke="#c9943a" stroke-width="0.8"/>
+        </svg>
+      </div>
       <div>
-        <div class="cert-name">GITHUB FOUNDATIONS</div>
+        <div class="cert-name">GitHub Foundations</div>
         <div class="cert-issuer">Udemy</div>
       </div>
     </div>
   </div>
-
 </section>
+
+<div class="rune-divider">
+  <svg width="48" height="32" viewBox="0 0 48 32" fill="none">
+    <path d="M4 16 L12 8 L24 16 L36 8 L44 16" stroke="#c8a84b" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <circle cx="24" cy="16" r="3" stroke="#74c2a8" stroke-width="0.8" fill="none"/>
+  </svg>
 </div>
 
 <!-- CONTACT -->
-<div class="section-wrapper">
 <section id="contact">
-  <h2 class="section-title" style="justify-content:center;">
-    ✉ CONTACT
+  <h2 class="section-title reveal" style="justify-content:center;">
+    <svg class="section-title-icon" viewBox="0 0 28 28" fill="none">
+      <path d="M5 8h18v14H5z" stroke="#c8a84b" stroke-width="1"/>
+      <path d="M5 8l9 8 9-8" stroke="#74c2a8" stroke-width="1" fill="none"/>
+    </svg>
+    Send a Message
   </h2>
-  <div class="contact-box">
-    <div class="contact-title">¿LISTO PARA JUGAR EN EQUIPO?</div>
-    <p class="contact-desc">
-      Open to nuevas oportunidades en desarrollo full-stack,<br>
-      web dev o soporte técnico. Let's build something epic.
+  <div class="contact-shrine reveal">
+    <div class="contact-head">Ready to team up?</div>
+    <p class="contact-sub">
+      Open to new opportunities in full-stack development,<br>
+      web engineering or technical support.<br>
+      Let&rsquo;s build something legendary.
     </p>
     <div class="contact-links">
       <a href="mailto:st3144@utr.edu.mx" class="contact-link">
-        📧 st3144@utr.edu.mx
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <rect x="2" y="4" width="14" height="10" rx="1" stroke="currentColor" stroke-width="0.9"/>
+          <path d="M2 4l7 6 7-6" stroke="currentColor" stroke-width="0.9" fill="none"/>
+        </svg>
+        st3144@utr.edu.mx
       </a>
       <a href="tel:+524494347628" class="contact-link">
-        📞 +52 449 434 7628
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M4 3h3l1.5 4-2 1.2A10 10 0 009.8 13l1.2-2L15 12.5V15a1.5 1.5 0 01-1.5 1.5C7 16.5 2 11.5 2 5A1.5 1.5 0 013.5 3z" stroke="currentColor" stroke-width="0.9" fill="none"/>
+        </svg>
+        +52 449 434 7628
       </a>
-      <a href="https://github.com/" target="_blank" class="contact-link">
-        🐙 GitHub
+      <a href="https://github.com/josuetrujillo-vr" target="_blank" class="contact-link">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M9 2a7 7 0 00-2.21 13.64c.35.06.48-.15.48-.34v-1.19c-1.94.42-2.35-.94-2.35-.94-.32-.81-.78-1.02-.78-1.02-.64-.43.05-.42.05-.42.7.05 1.07.72 1.07.72.62 1.07 1.63.76 2.03.58.06-.45.24-.76.44-.94-1.55-.18-3.18-.77-3.18-3.43 0-.76.27-1.38.72-1.87-.07-.17-.31-.88.07-1.84 0 0 .59-.19 1.93.72a6.7 6.7 0 013.5 0c1.34-.91 1.93-.72 1.93-.72.38.96.14 1.67.07 1.84.45.49.72 1.11.72 1.87 0 2.67-1.63 3.25-3.18 3.43.25.22.47.64.47 1.29v1.92c0 .19.13.4.48.34A7 7 0 009 2z" stroke="currentColor" stroke-width="0.7" fill="none"/>
+        </svg>
+        GitHub
       </a>
     </div>
   </div>
 </section>
-</div>
 
-<!-- FOOTER -->
 <footer>
-  <p>⚔ Josue Trujillo Zenon &nbsp;|&nbsp; Crafted with ❤ in Aguascalientes, México &nbsp;|&nbsp; 2025</p>
-  <p style="margin-top:0.5rem; font-size:13px;">Built with HTML · CSS · Vanilla JS &nbsp;–&nbsp; No frameworks needed for true blocky power.</p>
+  <p>Josue Trujillo Zenon &nbsp;&middot;&nbsp; Crafted in Aguascalientes, Mexico &nbsp;&middot;&nbsp; 2025</p>
 </footer>
 
 <script>
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); }
   });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-  const items = document.querySelectorAll('.timeline-item, .project-card, .edu-card, .cert-card, .skill-category');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(en => {
-      if (en.isIntersecting) {
-        en.target.style.opacity = '1';
-        en.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  items.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-    obs.observe(el);
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if(t) t.scrollIntoView({ behavior:'smooth', block:'start' });
   });
+});
 </script>
 </body>
 </html>
