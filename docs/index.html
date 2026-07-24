@@ -1,420 +1,345 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Josue Trujillo Zenon - Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">
-    <span class="nav-emblem"><i data-lucide="sparkles"></i></span>
+  <a class="nav-logo" href="#hero" aria-label="Josue Trujillo Zenon home">
+    <span class="nav-emblem"><i data-lucide="moon-star"></i></span>
     JTZ.DEV
-  </div>
+  </a>
   <ul>
     <li><a href="#about"><i data-lucide="user"></i>About</a></li>
-    <li><a href="#skills"><i data-lucide="star"></i>Skills</a></li>
-    <li><a href="#experience"><i data-lucide="briefcase"></i>Exp.</a></li>
+    <li><a href="#skills"><i data-lucide="sparkles"></i>Skills</a></li>
+    <li><a href="#experience"><i data-lucide="briefcase"></i>Experience</a></li>
     <li><a href="#projects"><i data-lucide="folder-open"></i>Projects</a></li>
     <li><a href="#education"><i data-lucide="graduation-cap"></i>Education</a></li>
-    <li><a href="#contact"><i data-lucide="mail"></i>Contact</a></li>
+    <li><a href="#contact"><i data-lucide="send"></i>Contact</a></li>
   </ul>
 </nav>
 
-<section id="hero">
-  <div class="hero-orbit">
-    <div class="hero-orbit-core">
-      <span class="hero-vision"><i data-lucide="sparkles"></i></span>
+<main>
+  <section id="hero">
+    <div class="hero-map" aria-hidden="true">
+      <div class="moon-disc">
+        <i data-lucide="orbit"></i>
+      </div>
+      <span class="map-line line-one"></span>
+      <span class="map-line line-two"></span>
+      <span class="map-dot dot-one"></span>
+      <span class="map-dot dot-two"></span>
+      <span class="map-dot dot-three"></span>
     </div>
-  </div>
 
-  <p class="hero-kicker">Teyvat-inspired developer profile</p>
-  <h1 class="hero-name">Josue Trujillo<br>Zenon</h1>
-  <p class="hero-title-text">Software Developer / Technical Specialist</p>
-
-  <div class="hero-element-row">
-    <span class="element-badge el-anemo">React</span>
-    <span class="element-badge el-geo">Node.js</span>
-    <span class="element-badge el-electro">PHP</span>
-    <span class="element-badge el-cryo">Python</span>
-    <span class="element-badge el-hydro">MySQL</span>
-    <span class="element-badge el-pyro">Java</span>
-  </div>
-
-  <p class="hero-desc">
-    Full-stack developer and technical support specialist from Aguascalientes, Mexico.
-    Building polished digital experiences with the balance of craft, curiosity and teamwork.
-  </p>
-
-  <div class="hero-cta">
-    <a href="#projects" class="g-btn g-btn-gold">View Projects</a>
-    <a href="#contact" class="g-btn g-btn-anemo">Contact</a>
-  </div>
-</section>
-
-<div class="aether-divider" aria-hidden="true">
-  <span></span>
-  <i data-lucide="sparkles"></i>
-  <span></span>
-</div>
-
-<section id="about">
-  <h2 class="section-title reveal">
-    <i data-lucide="user"></i>
-    Traveler Profile
-  </h2>
-  <div class="about-grid">
-    <div class="about-lore reveal">
-      Developer with experience in <strong>technical support</strong> and <em>front-end development</em>.
-      Currently working as Front-End Developer at Universidad Tecnologica El Retono under the Dual Education program, while finishing his Engineering degree in Software Development.
-      <br><br>
-      His journey spans from customer service excellence at Teleperformance to building production-grade web systems for government institutions. A <strong>problem-solver</strong> by nature, skilled in both code quality and cross-team collaboration.
-      <br><br>
-      <div class="profile-tags">
-        <span class="profile-tag">SCRUM</span>
-        <span class="profile-tag">Agile</span>
-        <span class="profile-tag">B2 English</span>
-        <span class="profile-tag">Linux</span>
+    <div class="hero-copy">
+      <p class="hero-kicker">Moonlit developer dossier</p>
+      <h1>Josue Trujillo Zenon</h1>
+      <p class="hero-title-text">Software Developer / Odoo Developer / Technical Specialist</p>
+      <p class="hero-desc">
+        I build responsive web interfaces, ERP customizations, internal management systems,
+        and workflow automations with a practical eye for support, documentation, and teams
+        working under pressure.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="g-btn g-btn-primary"><i data-lucide="scroll-text"></i>Read Log</a>
+        <a href="#projects" class="g-btn"><i data-lucide="gem"></i>View Projects</a>
       </div>
     </div>
-    <div class="stat-panel reveal">
-      <div class="stat-row">
-        <i data-lucide="map-pinned" class="stat-icon"></i>
-        <span class="stat-label">Location</span>
-        <span class="stat-val">Aguascalientes, MX</span>
-      </div>
-      <div class="stat-row">
-        <i data-lucide="mail" class="stat-icon"></i>
-        <span class="stat-label">Email</span>
-        <span class="stat-val">st3144@utr.edu.mx</span>
-      </div>
-      <div class="stat-row">
-        <i data-lucide="phone" class="stat-icon"></i>
-        <span class="stat-label">Phone</span>
-        <span class="stat-val">+52 449 434 7628</span>
-      </div>
-      <div class="stat-row">
-        <i data-lucide="book-open" class="stat-icon"></i>
-        <span class="stat-label">Quarter</span>
-        <span class="stat-val">10th - Active</span>
-      </div>
-      <div class="lang-row">
-        <div class="lang-box">
-          <span class="lang-code">ES</span>
-          <span class="lang-level">Native</span>
+
+    <aside class="hero-card reveal">
+      <span class="card-label">Current Quest</span>
+      <strong>Odoo 18 Community customization</strong>
+      <p>PLM, accounting workflows, KiCad BOM management, CFDI 4.0 support, PostgreSQL, and Docker-based troubleshooting.</p>
+    </aside>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title reveal"><i data-lucide="user"></i>Traveler Profile</h2>
+    <div class="about-grid">
+      <div class="about-lore reveal">
+        <p>
+          Software development and technical support professional from Aguascalientes, Mexico,
+          with experience in front-end development, ERP customization, database management,
+          and digital process automation.
+        </p>
+        <p>
+          My work spans public-sector case management, university web platforms, Odoo business
+          workflows, and technical support environments where clear communication and fast
+          troubleshooting matter as much as the code.
+        </p>
+        <div class="profile-tags">
+          <span>Problem solving</span>
+          <span>Process improvement</span>
+          <span>Technical documentation</span>
+          <span>Agile teams</span>
         </div>
-        <div class="lang-box">
-          <span class="lang-code">EN</span>
-          <span class="lang-level">B2 CEFR</span>
+      </div>
+      <div class="stat-panel reveal">
+        <div class="stat-row">
+          <i data-lucide="map-pinned"></i>
+          <span>Location</span>
+          <strong>Aguascalientes, MX</strong>
+        </div>
+        <div class="stat-row">
+          <i data-lucide="mail"></i>
+          <span>Email</span>
+          <strong>Available by contact button</strong>
+        </div>
+        <div class="stat-row">
+          <i data-lucide="phone"></i>
+          <span>Phone</span>
+          <strong>Available by contact button</strong>
+        </div>
+        <div class="lang-row">
+          <div>
+            <span>ES</span>
+            <strong>Native</strong>
+          </div>
+          <div>
+            <span>EN</span>
+            <strong>B2 / Linguaskill</strong>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="aether-divider" aria-hidden="true">
-  <span></span>
-  <i data-lucide="star"></i>
-  <span></span>
-</div>
+  <section id="skills">
+    <h2 class="section-title reveal"><i data-lucide="sparkles"></i>Vision &amp; Skills</h2>
+    <div class="vision-grid">
+      <article class="vision-card reveal">
+        <i data-lucide="code-xml"></i>
+        <h3>Languages &amp; Frameworks</h3>
+        <div class="skill-tags">
+          <span>Java</span><span>JavaScript</span><span>Node.js</span><span>React</span>
+          <span>PHP</span><span>Python</span><span>HTML</span><span>CSS</span>
+          <span>Tailwind CSS</span><span>Astro</span>
+        </div>
+      </article>
+      <article class="vision-card reveal">
+        <i data-lucide="boxes"></i>
+        <h3>ERP &amp; Business Systems</h3>
+        <div class="skill-tags">
+          <span>Odoo 18 Community</span><span>Odoo customization</span>
+          <span>Accounting workflows</span><span>PLM concepts</span>
+          <span>BOM management</span><span>Engineering change traceability</span>
+          <span>CFDI 4.0</span>
+        </div>
+      </article>
+      <article class="vision-card reveal">
+        <i data-lucide="database"></i>
+        <h3>Data &amp; Platforms</h3>
+        <div class="skill-tags">
+          <span>MySQL</span><span>SQL Server 2012</span><span>PostgreSQL</span>
+          <span>Git</span><span>GitHub</span><span>Linux</span><span>Docker</span>
+          <span>CentOS 7</span><span>Microsoft Office</span>
+        </div>
+      </article>
+      <article class="vision-card reveal">
+        <i data-lucide="workflow"></i>
+        <h3>Methods &amp; Hardware</h3>
+        <div class="skill-tags">
+          <span>SCRUM</span><span>Agile</span><span>Process improvement</span>
+          <span>Technical documentation</span><span>KiCad</span><span>WebVR</span>
+          <span>A-Frame</span>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<section id="skills">
-  <h2 class="section-title reveal">
-    <i data-lucide="stars"></i>
-    Vision &amp; Skills
-  </h2>
-  <div class="vision-grid">
-    <div class="vision-card vc-anemo reveal">
-      <div class="vision-header">
-        <i data-lucide="code-xml" class="vision-el-icon"></i>
-        <span class="vision-title">Languages &amp; Frameworks</span>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Node.js</span><span class="skill-tag">React</span>
-        <span class="skill-tag">PHP</span><span class="skill-tag">Python</span>
-        <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
-        <span class="skill-tag">Tailwind</span><span class="skill-tag">Astro</span>
-      </div>
-    </div>
-    <div class="vision-card vc-geo reveal">
-      <div class="vision-header">
-        <i data-lucide="database" class="vision-el-icon"></i>
-        <span class="vision-title">Databases</span>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">MySQL</span>
-        <span class="skill-tag">SQL Server 2012</span>
-      </div>
-    </div>
-    <div class="vision-card vc-electro reveal">
-      <div class="vision-header">
-        <i data-lucide="cpu" class="vision-el-icon"></i>
-        <span class="vision-title">Tools &amp; Platforms</span>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
-        <span class="skill-tag">Linux</span><span class="skill-tag">CentOS 7</span>
-        <span class="skill-tag">WebVR</span><span class="skill-tag">A-Frame</span>
-        <span class="skill-tag">MS Office</span>
-      </div>
-    </div>
-    <div class="vision-card vc-cryo reveal">
-      <div class="vision-header">
-        <i data-lucide="workflow" class="vision-el-icon"></i>
-        <span class="vision-title">Methodologies</span>
-      </div>
-      <div class="skill-tags">
-        <span class="skill-tag">SCRUM</span><span class="skill-tag">Agile</span>
-        <span class="skill-tag">Sprint Plan.</span><span class="skill-tag">Backlog</span>
-        <span class="skill-tag">Stand-ups</span>
-      </div>
-    </div>
-  </div>
-</section>
+  <section id="experience">
+    <h2 class="section-title reveal"><i data-lucide="briefcase"></i>Adventure Log</h2>
+    <div class="log-timeline">
+      <article class="log-item reveal">
+        <div class="log-period">May 2026 - Present / Aguascalientes, MX</div>
+        <h3>Odoo Developer - Internships, PLM and Engineering Process Integration</h3>
+        <p class="log-company">Electronic Cats</p>
+        <ul>
+          <li>Developed and customized Odoo workflows for operations, accounting, and engineering documentation.</li>
+          <li>Worked on Odoo PLM integration with KiCad for BOM management and engineering change traceability.</li>
+          <li>Configured accounting, invoicing, bank reconciliation, taxes, and Mexican CFDI 4.0 workflows.</li>
+          <li>Troubleshot Odoo errors, PostgreSQL issues, module behavior, and Docker-based deployment problems.</li>
+          <li>Created and adjusted import files for accounting records, bank statements, taxes, and chart of accounts data.</li>
+        </ul>
+      </article>
 
-<div class="aether-divider" aria-hidden="true">
-  <span></span>
-  <i data-lucide="compass"></i>
-  <span></span>
-</div>
+      <article class="log-item reveal">
+        <div class="log-period">August 2025 - May 2026 / Aguascalientes, MX</div>
+        <h3>Front-End Developer - Dual Education Program</h3>
+        <p class="log-company">Universidad Tecnologica El Retono</p>
+        <ul>
+          <li>Developed components for the official university website using React, Astro, Tailwind CSS, and JavaScript.</li>
+          <li>Built responsive, reusable UI following component-based architecture.</li>
+          <li>Collaborated with designers, backend developers, and stakeholders under SCRUM.</li>
+          <li>Participated in sprint planning, backlog refinement, estimation, and daily stand-ups.</li>
+          <li>Improved interface consistency and front-end performance across the platform.</li>
+        </ul>
+      </article>
 
-<section id="experience">
-  <h2 class="section-title reveal">
-    <i data-lucide="briefcase"></i>
-    Adventure Log
-  </h2>
-  <div class="log-timeline">
-    <div class="log-item reveal">
-      <div class="log-job">Front-End Developer - Dual Education</div>
-      <div class="log-company">Universidad Tecnologica El Retono</div>
-      <div class="log-period">2025 - Present / Aguascalientes, MX</div>
-      <ul class="log-desc">
-        <li>Built front-end components for the official university site using React, Astro, Tailwind CSS and JavaScript.</li>
-        <li>Collaborated with designers and backend developers under the SCRUM framework.</li>
-        <li>Supported sprint planning, backlog refinement and daily stand-ups.</li>
-        <li>Delivered responsive, modular UI following component-based architecture.</li>
-        <li>Contributed to performance optimization and design consistency.</li>
-      </ul>
+      <article class="log-item reveal">
+        <div class="log-period">January 2025 - June 2026 / Aguascalientes, MX</div>
+        <h3>Security Officer - Industrial Access Control and CTPAT Procedures</h3>
+        <p class="log-company">TNR-Advans</p>
+        <ul>
+          <li>Safeguarded the Flextronics Aguascalientes facility through industrial security and access control protocols.</li>
+          <li>Verified personnel, visitors, contractors, transport units, and high-risk materials at security checkpoints.</li>
+          <li>Reviewed trailer, truck, cargo, and outbound custody documentation for shipments to Laredo.</li>
+          <li>Supported CTPAT-related procedures with attention to detail, confidentiality, and protocol compliance.</li>
+        </ul>
+      </article>
+
+      <article class="log-item reveal">
+        <div class="log-period">August 2024 - December 2024 / Aguascalientes, MX</div>
+        <h3>Software Developer - Digital Legal Management System</h3>
+        <p class="log-company">DIF Estatal de Aguascalientes</p>
+        <ul>
+          <li>Designed a digital legal case management system using PHP, JavaScript, HTML, CSS, and SQL Server 2012.</li>
+          <li>Created modules for case registration, consultation, report generation, and user management.</li>
+          <li>Automated PDF report generation and improved legal documentation organization.</li>
+          <li>Reduced file search time by 80% and data errors by 90%.</li>
+        </ul>
+      </article>
+
+      <article class="log-item reveal">
+        <div class="log-period">2021 - January 2025 / Aguascalientes, MX</div>
+        <h3>Repair Specialist &amp; Customer Service</h3>
+        <p class="log-company">Teleperformance</p>
+        <ul>
+          <li>Provided technical support and troubleshooting for repair cases while meeting quality and response-time standards.</li>
+          <li>Resolved customer inquiries and billing discrepancies in coordination with the finance department.</li>
+          <li>Designed and delivered training sessions for new agents on procedures, systems, and service practices.</li>
+          <li>Consistently met productivity and quality metrics in a high-pressure support environment.</li>
+        </ul>
+      </article>
     </div>
-    <div class="log-item reveal">
-      <div class="log-job">Repair Specialist &amp; Customer Service</div>
-      <div class="log-company">Teleperformance</div>
-      <div class="log-period">2021 - January 2025 / Aguascalientes, MX</div>
-      <ul class="log-desc">
-        <li>Provided technical support and troubleshooting aligned with quality and response-time standards.</li>
-        <li>Resolved customer inquiries contributing to strong satisfaction levels.</li>
-        <li>Analyzed and corrected billing discrepancies with the finance department.</li>
-        <li>Designed and delivered training sessions for new agents.</li>
-        <li>Worked under pressure while meeting performance and quality metrics.</li>
-      </ul>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title reveal"><i data-lucide="folder-open"></i>Artifact Collection</h2>
+    <div class="artifact-grid">
+      <article class="artifact-card reveal featured-artifact">
+        <span class="artifact-mark">5-star system</span>
+        <h3>Digital Legal Management System</h3>
+        <p>DIF Estatal de Aguascalientes / 2024</p>
+        <ul>
+          <li>Centralized legal case information and improved internal case tracking.</li>
+          <li>Automated PDF reports and user management workflows.</li>
+          <li>Reduced search time by 80% and errors by 90%.</li>
+        </ul>
+        <div class="tech-row">
+          <span>PHP</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL Server</span><span>SCRUM</span>
+        </div>
+      </article>
+
+      <article class="artifact-card reveal">
+        <span class="artifact-mark">VR build</span>
+        <h3>Virtual Reality Shooter - Oculus Quest 3</h3>
+        <p>Virtual Reality / WebVR</p>
+        <ul>
+          <li>Created an interactive VR shooter using A-Frame WebVR.</li>
+          <li>Implemented targets, life points, movement controls, collisions, and controller-based shooting.</li>
+        </ul>
+        <div class="tech-row">
+          <span>A-Frame</span><span>WebVR</span><span>JavaScript</span><span>Oculus Quest 3</span>
+        </div>
+      </article>
+
+      <article class="artifact-card reveal">
+        <span class="artifact-mark">Web platform</span>
+        <h3>University Website - UTR</h3>
+        <p>Universidad Tecnologica El Retono</p>
+        <ul>
+          <li>Built modular front-end components for the official university website.</li>
+          <li>Improved responsiveness, component reuse, consistency, and performance.</li>
+        </ul>
+        <div class="tech-row">
+          <span>React</span><span>Astro</span><span>Tailwind CSS</span><span>JavaScript</span>
+        </div>
+      </article>
+
+      <article class="artifact-card reveal">
+        <span class="artifact-mark">Web apps</span>
+        <h3>Web Development Projects</h3>
+        <p>APIs, databases, and responsive interfaces</p>
+        <ul>
+          <li>Built web applications using JavaScript, HTML, CSS, and external APIs.</li>
+          <li>Managed MySQL databases on virtual machines running CentOS 7.</li>
+        </ul>
+        <div class="tech-row">
+          <span>JavaScript</span><span>HTML/CSS</span><span>MySQL</span><span>CentOS 7</span><span>REST APIs</span>
+        </div>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="aether-divider" aria-hidden="true">
-  <span></span>
-  <i data-lucide="gem"></i>
-  <span></span>
-</div>
-
-<section id="projects">
-  <h2 class="section-title reveal">
-    <i data-lucide="folder-open"></i>
-    Artifact Collection
-  </h2>
-  <div class="artifact-grid">
-    <div class="artifact-card reveal">
-      <div class="artifact-rarity">
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-      </div>
-      <div class="artifact-name">Digital Legal Management System</div>
-      <div class="artifact-set">DIF Estatal de Aguascalientes / 2024</div>
-      <ul class="artifact-desc">
-        <li>Digital case management system for legal records.</li>
-        <li>Centralized information and optimized internal processes.</li>
-        <li>Automated PDF report generation.</li>
-        <li>Enhanced data security architecture.</li>
-      </ul>
-      <div class="impact-row">
-        <span class="impact-pill">Search time -80%</span>
-        <span class="impact-pill blue">Errors -90%</span>
-      </div>
-      <div class="tech-row">
-        <span class="tech-pill">PHP</span><span class="tech-pill">JavaScript</span>
-        <span class="tech-pill">HTML/CSS</span><span class="tech-pill">SQL Server</span><span class="tech-pill">SCRUM</span>
-      </div>
-    </div>
-
-    <div class="artifact-card reveal">
-      <div class="artifact-rarity">
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star cryo"></i>
-      </div>
-      <div class="artifact-name">VR Shooter - Oculus Quest 3</div>
-      <div class="artifact-set">Virtual Reality / WebVR</div>
-      <ul class="artifact-desc">
-        <li>Interactive VR shooter using A-Frame WebVR.</li>
-        <li>Life-point mechanics and interactive objectives.</li>
-        <li>Configurable mappable play area.</li>
-      </ul>
-      <div class="tech-row">
-        <span class="tech-pill">A-Frame</span><span class="tech-pill">WebVR</span>
-        <span class="tech-pill">JavaScript</span><span class="tech-pill">Oculus Quest 3</span>
-      </div>
+  <section id="education">
+    <h2 class="section-title reveal"><i data-lucide="graduation-cap"></i>Lore &amp; Ascension</h2>
+    <div class="edu-grid">
+      <article class="edu-card active reveal">
+        <span>Active</span>
+        <h3>Engineering in Software Management and Development</h3>
+        <p>Universidad Tecnologica El Retono / 2025 - Present</p>
+      </article>
+      <article class="edu-card reveal">
+        <h3>Associate's Degree in Information Technology, Multiplatform Software Development</h3>
+        <p>Universidad Tecnologica El Retono / 2020 - 2024</p>
+      </article>
+      <article class="edu-card reveal">
+        <h3>Programming Technician Diploma</h3>
+        <p>CBTis 284, Aguascalientes / 2017 - 2020</p>
+      </article>
     </div>
 
-    <div class="artifact-card reveal">
-      <div class="artifact-rarity">
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star cryo"></i>
-      </div>
-      <div class="artifact-name">University Website - UTR</div>
-      <div class="artifact-set">Universidad Tecnologica El Retono</div>
-      <ul class="artifact-desc">
-        <li>Official university site with modular components.</li>
-        <li>Responsive UI following component-based architecture.</li>
-        <li>Performance optimization and design consistency.</li>
-      </ul>
-      <div class="tech-row">
-        <span class="tech-pill">React</span><span class="tech-pill">Astro</span>
-        <span class="tech-pill">Tailwind</span><span class="tech-pill">JavaScript</span>
-      </div>
-    </div>
-
-    <div class="artifact-card reveal">
-      <div class="artifact-rarity">
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star gold"></i>
-        <i data-lucide="star" class="artifact-star cryo"></i>
-        <i data-lucide="star" class="artifact-star dim"></i>
-      </div>
-      <div class="artifact-name">Web Apps &amp; API Integration</div>
-      <div class="artifact-set">Web Development Projects</div>
-      <ul class="artifact-desc">
-        <li>Web applications with JavaScript, HTML, CSS and external APIs.</li>
-        <li>MySQL databases on virtual machines running CentOS 7.</li>
-        <li>Full-stack architecture with service integration.</li>
-      </ul>
-      <div class="tech-row">
-        <span class="tech-pill">JavaScript</span><span class="tech-pill">HTML/CSS</span>
-        <span class="tech-pill">MySQL</span><span class="tech-pill">CentOS 7</span><span class="tech-pill">REST APIs</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="aether-divider" aria-hidden="true">
-  <span></span>
-  <i data-lucide="star"></i>
-  <span></span>
-</div>
-
-<section id="education">
-  <h2 class="section-title reveal">
-    <i data-lucide="graduation-cap"></i>
-    Lore &amp; Ascension
-  </h2>
-
-  <div class="edu-grid">
-    <div class="edu-card active reveal">
-      <span class="edu-active-tag">Active</span>
-      <div class="edu-degree">Engineering in Software Management &amp; Development</div>
-      <div class="edu-school">Universidad Tecnologica El Retono</div>
-      <div class="edu-year">2025 - Present / 11th Quarter</div>
-    </div>
-    <div class="edu-card reveal">
-      <div class="edu-degree">TSU - Multiplatform Software Development</div>
-      <div class="edu-school">Universidad Tecnologica El Retono</div>
-      <div class="edu-year">2020 - 2024</div>
-    </div>
-    <div class="edu-card reveal">
-      <div class="edu-degree">Programming Technician Diploma</div>
-      <div class="edu-school">CBTis 284 - Aguascalientes</div>
-      <div class="edu-year">2017 - 2020</div>
-    </div>
-  </div>
-
-  <h3 class="subsection-title reveal">Obtained Constellations</h3>
-
-  <div class="cert-grid">
-    <div class="cert-card reveal">
-      <div class="cert-icon-wrap"><i data-lucide="badge-check"></i></div>
-      <div>
-        <div class="cert-name">Red Hat App Dev I - Java EE</div>
-        <div class="cert-issuer">Red Hat / May 2025 / AD183</div>
-      </div>
-    </div>
-    <div class="cert-card reveal">
-      <div class="cert-icon-wrap"><i data-lucide="shield-check"></i></div>
-      <div>
-        <div class="cert-name">SCRUM Fundamentals Certified</div>
-        <div class="cert-issuer">SCRUMstudy</div>
-      </div>
-    </div>
-    <div class="cert-card reveal">
-      <div class="cert-icon-wrap"><i data-lucide="github"></i></div>
-      <div>
-        <div class="cert-name">GitHub Foundations</div>
-        <div class="cert-issuer">Udemy</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="aether-divider" aria-hidden="true">
-  <span></span>
-  <i data-lucide="send"></i>
-  <span></span>
-</div>
-
-<section id="contact">
-  <h2 class="section-title reveal section-title-center">
-    <i data-lucide="send"></i>
-    Send a Message
-  </h2>
-  <div class="contact-shrine reveal">
-    <div class="contact-head">Ready to team up?</div>
-    <p class="contact-sub">
-      Open to new opportunities in full-stack development,
-      web engineering or technical support.
-      Let's build something memorable.
-    </p>
-    <div class="contact-links">
-      <a href="mailto:st3144@utr.edu.mx" class="contact-link">
-        <i data-lucide="mail"></i>
-        st3144@utr.edu.mx
-      </a>
-      <a href="tel:+524494347628" class="contact-link">
-        <i data-lucide="phone"></i>
-        +52 449 434 7628
-      </a>
-      <a href="https://github.com/josuetrujillo-vr" target="_blank" rel="noreferrer" class="contact-link">
+    <h2 class="section-title small-title reveal"><i data-lucide="badge-check"></i>Constellations</h2>
+    <div class="cert-grid">
+      <article class="cert-card reveal">
+        <i data-lucide="badge-check"></i>
+        <div>
+          <h3>Red Hat Application Development I: Programming in Java EE</h3>
+          <p>Red Hat / Issued May 16, 2025</p>
+        </div>
+      </article>
+      <article class="cert-card reveal">
+        <i data-lucide="shield-check"></i>
+        <div>
+          <h3>SCRUM Fundamentals Certified</h3>
+          <p>SCRUMstudy</p>
+        </div>
+      </article>
+      <article class="cert-card reveal">
         <i data-lucide="github"></i>
-        GitHub
-      </a>
+        <div>
+          <h3>GitHub Foundations</h3>
+          <p>Udemy</p>
+        </div>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title reveal"><i data-lucide="send"></i>Send a Message</h2>
+    <div class="contact-shrine reveal">
+      <h3>Ready to team up?</h3>
+      <p>Open to roles in full-stack development, Odoo development, web engineering, ERP customization, and technical support.</p>
+      <div class="contact-links">
+        <a href="#contact" data-contact="email"><i data-lucide="mail"></i>Send Email</a>
+        <a href="#contact" data-contact="phone"><i data-lucide="phone"></i>Call Phone</a>
+        <a href="https://github.com/josuetrujillo-vr" target="_blank" rel="noreferrer"><i data-lucide="github"></i>GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-  <p>Josue Trujillo Zenon / Inspired by Genshin Impact aesthetics / 2026</p>
+  <p>Josue Trujillo Zenon / Frostmoon-inspired portfolio / 2026</p>
 </footer>
 
 <script src="https://unpkg.com/lucide@latest"></script>
@@ -430,12 +355,22 @@ const obs = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]:not([data-contact])').forEach(anchor => {
   anchor.addEventListener('click', event => {
     event.preventDefault();
     const target = document.querySelector(anchor.getAttribute('href'));
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
+});
+
+const contacts = {
+  email: [115, 116, 51, 49, 52, 52, 64, 117, 116, 114, 46, 101, 100, 117, 46, 109, 120],
+  phone: [43, 53, 50, 52, 52, 57, 52, 51, 52, 55, 54, 50, 56]
+};
+
+document.querySelectorAll('[data-contact]').forEach(link => {
+  const value = contacts[link.dataset.contact].map(code => String.fromCharCode(code)).join('');
+  link.href = link.dataset.contact === 'email' ? `mailto:${value}` : `tel:${value}`;
 });
 
 lucide.createIcons();
