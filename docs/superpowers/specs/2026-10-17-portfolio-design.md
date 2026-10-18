@@ -2,7 +2,7 @@
 
 Fecha: 2026-10-17
 Proyecto: josuetrujillo-vr.github.io
-Estado: recorrido aprobado en conversación; esta especificación está pendiente de revisión.
+Estado: especificación aprobada por el usuario en este chat el 2026-10-17.
 Frase aprobada: «Conecto código, procesos y personas».
 
 ## 1. Propósito y acuerdos
@@ -158,4 +158,4 @@ La verificación de implementación incluirá revisión visual de entrada, estad
 
 ## 10. Siguiente etapa
 
-Revisar y aprobar esta especificación. Después se redactará el plan de implementación con tareas, recursos, decisiones de renderizado y comprobaciones. La aprobación previa del recorrido no sustituye la revisión de este documento.
+La especificación fue aprobada por el usuario. La siguiente etapa es revisar el plan de implementación, que concreta tareas, recursos, decisiones de renderizado y comprobaciones, y seleccionar su método de ejecución antes de implementar.
