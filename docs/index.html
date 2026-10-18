@@ -1,379 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Josue Trujillo Zenon - Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Josue Trujillo Zenon. Desarrollo software, automatizo procesos y exploro experiencias interactivas. Portafolio de desarrollo web, sistemas Odoo y realidad virtual.">
+  <meta name="theme-color" content="#08090b">
+  <title>Josue Trujillo Zenon — Software, sistemas y VR</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2308090b'/%3E%3Ctext x='8' y='44' font-size='34' font-family='sans-serif' fill='%23f2eee7'%3EJT%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <canvas class="scene-canvas" aria-hidden="true" hidden></canvas>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#hero">Josue Trujillo<span class="wordmark-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#projects">Proyectos</a><a href="#experience">Trayectoria</a><a href="#contact">Contacto <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="motion-controls"><button class="motion-toggle" type="button" aria-pressed="false" hidden>Pausar movimiento</button></div>
+  </header>
 
-<nav>
-  <a class="nav-logo" href="#hero" aria-label="Josue Trujillo Zenon home">
-    <span class="nav-emblem"><i data-lucide="moon-star"></i></span>
-    JTZ.DEV
-  </a>
-  <ul>
-    <li><a href="#about"><i data-lucide="user"></i>About</a></li>
-    <li><a href="#skills"><i data-lucide="sparkles"></i>Skills</a></li>
-    <li><a href="#experience"><i data-lucide="briefcase"></i>Experience</a></li>
-    <li><a href="#projects"><i data-lucide="folder-open"></i>Projects</a></li>
-    <li><a href="#education"><i data-lucide="graduation-cap"></i>Education</a></li>
-    <li><a href="#contact"><i data-lucide="send"></i>Contact</a></li>
-  </ul>
-</nav>
-
-<main>
-  <section id="hero">
-    <div class="hero-map" aria-hidden="true">
-      <div class="moon-disc">
-        <i data-lucide="orbit"></i>
+  <main id="main" tabindex="-1">
+    <section id="hero" class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software · Sistemas · Realidad virtual</p>
+        <h1 id="hero-title">Conecto código,<br> procesos<br> y personas</h1>
+        <p class="hero-description">Desarrollo software, automatizo procesos y exploro experiencias interactivas.</p>
+        <div class="hero-links"><a class="button" href="#projects">Explorar proyectos <span aria-hidden="true">↗</span></a><a class="text-link" href="#contact">Contactar <span aria-hidden="true">↗</span></a></div>
       </div>
-      <span class="map-line line-one"></span>
-      <span class="map-line line-two"></span>
-      <span class="map-dot dot-one"></span>
-      <span class="map-dot dot-two"></span>
-      <span class="map-dot dot-three"></span>
-    </div>
-
-    <div class="hero-copy">
-      <p class="hero-kicker">Moonlit developer dossier</p>
-      <h1>Josue Trujillo Zenon</h1>
-      <p class="hero-title-text">Software Developer / Odoo Developer / Technical Specialist</p>
-      <p class="hero-desc">
-        I build responsive web interfaces, ERP customizations, internal management systems,
-        and workflow automations with a practical eye for support, documentation, and teams
-        working under pressure.
-      </p>
-      <div class="hero-cta">
-        <a href="#experience" class="g-btn g-btn-primary"><i data-lucide="scroll-text"></i>Read Log</a>
-        <a href="#projects" class="g-btn"><i data-lucide="gem"></i>View Projects</a>
+      <div class="portrait-composition">
+        <div class="scene-slot portrait-slot" data-scene-slot="portrait">
+          <img class="portrait scene-fallback" src="assets/images/portrait.webp" alt="Retrato de Josue Trujillo construido con filamentos blancos sobre fondo negro" width="1254" height="1254" fetchpriority="high">
+        </div>
+        <p class="portrait-caption">Una mirada. Muchas conexiones.</p>
       </div>
-    </div>
+      <div class="hero-foot"><span>Aguascalientes, México</span><a href="#about">Conoce mi trabajo <span aria-hidden="true">↓</span></a></div>
+    </section>
 
-    <aside class="hero-card reveal">
-      <span class="card-label">Current Quest</span>
-      <strong>Odoo 18 Community customization</strong>
-      <p>PLM, accounting workflows, KiCad BOM management, CFDI 4.0 support, PostgreSQL, and Docker-based troubleshooting.</p>
-    </aside>
-  </section>
-
-  <section id="about">
-    <h2 class="section-title reveal"><i data-lucide="user"></i>Traveler Profile</h2>
-    <div class="about-grid">
-      <div class="about-lore reveal">
-        <p>
-          Software development and technical support professional from Aguascalientes, Mexico,
-          with experience in front-end development, ERP customization, database management,
-          and digital process automation.
-        </p>
-        <p>
-          My work spans public-sector case management, university web platforms, Odoo business
-          workflows, and technical support environments where clear communication and fast
-          troubleshooting matter as much as the code.
-        </p>
-        <div class="profile-tags">
-          <span>Problem solving</span>
-          <span>Process improvement</span>
-          <span>Technical documentation</span>
-          <span>Agile teams</span>
-        </div>
+    <section id="about" class="about section wrap" aria-labelledby="about-title">
+      <div class="about-copy"><p class="eyebrow">La conexión entre disciplinas</p><h2 id="about-title">Del problema real<br> a una solución útil.</h2>
+        <p>Soy desarrollador de software y especialista en soporte técnico en Aguascalientes. Trabajo con interfaces web, sistemas de gestión y automatización de procesos.</p>
+        <p>He colaborado en gestión jurídica del sector público, plataformas universitarias y flujos de negocio en Odoo. Me importa entender a quienes usan el sistema, documentar lo que construyo y resolver problemas con el equipo.</p>
+        <p class="languages">Español nativo <span aria-hidden="true">/</span> Inglés B2 · Linguaskill</p>
       </div>
-      <div class="stat-panel reveal">
-        <div class="stat-row">
-          <i data-lucide="map-pinned"></i>
-          <span>Location</span>
-          <strong>Aguascalientes, MX</strong>
+      <div class="branches-visual">
+        <div class="scene-slot" data-scene-slot="branches" aria-hidden="true">
+          <svg class="scene-fallback line-art" viewBox="0 0 520 340" fill="none" focusable="false"><g stroke="currentColor"><path d="M42 170C180 170 204 65 445 65M42 170C180 170 204 170 445 170M42 170C180 170 204 275 445 275"/><path d="M42 170C180 188 240 46 445 65M42 170C180 154 232 88 445 65M42 170C180 190 240 149 445 170M42 170C180 149 232 192 445 170M42 170C180 153 240 294 445 275M42 170C180 188 232 253 445 275" opacity=".35"/></g><g fill="#ff8759"><circle cx="42" cy="170" r="4"/><circle cx="445" cy="65" r="3"/><circle cx="445" cy="170" r="3"/><circle cx="445" cy="275" r="3"/></g></svg>
         </div>
-        <div class="stat-row">
-          <i data-lucide="mail"></i>
-          <span>Email</span>
-          <strong>Available by contact button</strong>
-        </div>
-        <div class="stat-row">
-          <i data-lucide="phone"></i>
-          <span>Phone</span>
-          <strong>Available by contact button</strong>
-        </div>
-        <div class="lang-row">
-          <div>
-            <span>ES</span>
-            <strong>Native</strong>
-          </div>
-          <div>
-            <span>EN</span>
-            <strong>B2 / Linguaskill</strong>
-          </div>
-        </div>
+        <div class="discipline-links"><a href="#project-web">Web <span aria-hidden="true">↗</span></a><a href="#project-systems">Sistemas <span aria-hidden="true">↗</span></a><a href="#project-vr">VR <span aria-hidden="true">↗</span></a></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills">
-    <h2 class="section-title reveal"><i data-lucide="sparkles"></i>Vision &amp; Skills</h2>
-    <div class="vision-grid">
-      <article class="vision-card reveal">
-        <i data-lucide="code-xml"></i>
-        <h3>Languages &amp; Frameworks</h3>
-        <div class="skill-tags">
-          <span>Java</span><span>JavaScript</span><span>Node.js</span><span>React</span>
-          <span>PHP</span><span>Python</span><span>HTML</span><span>CSS</span>
-          <span>Tailwind CSS</span><span>Astro</span>
-        </div>
-      </article>
-      <article class="vision-card reveal">
-        <i data-lucide="boxes"></i>
-        <h3>ERP &amp; Business Systems</h3>
-        <div class="skill-tags">
-          <span>Odoo 18 Community</span><span>Odoo customization</span>
-          <span>Accounting workflows</span><span>PLM concepts</span>
-          <span>BOM management</span><span>Engineering change traceability</span>
-          <span>CFDI 4.0</span>
-        </div>
-      </article>
-      <article class="vision-card reveal">
-        <i data-lucide="database"></i>
-        <h3>Data &amp; Platforms</h3>
-        <div class="skill-tags">
-          <span>MySQL</span><span>SQL Server 2012</span><span>PostgreSQL</span>
-          <span>Git</span><span>GitHub</span><span>Linux</span><span>Docker</span>
-          <span>CentOS 7</span><span>Microsoft Office</span>
-        </div>
-      </article>
-      <article class="vision-card reveal">
-        <i data-lucide="workflow"></i>
-        <h3>Methods &amp; Hardware</h3>
-        <div class="skill-tags">
-          <span>SCRUM</span><span>Agile</span><span>Process improvement</span>
-          <span>Technical documentation</span><span>KiCad</span><span>WebVR</span>
-          <span>A-Frame</span>
-        </div>
-      </article>
-    </div>
-  </section>
+    <section id="projects" class="projects section wrap" aria-labelledby="projects-title">
+      <div class="section-heading"><p class="eyebrow">Proyectos seleccionados</p><h2 id="projects-title">Distintos medios.<br> La misma intención.</h2><p>Interfaces que orientan, procesos que se conectan y espacios que responden.</p></div>
 
-  <section id="experience">
-    <h2 class="section-title reveal"><i data-lucide="briefcase"></i>Adventure Log</h2>
-    <div class="log-timeline">
-      <article class="log-item reveal">
-        <div class="log-period">May 2026 - Present / Aguascalientes, MX</div>
-        <h3>Odoo Developer - Internships, PLM and Engineering Process Integration</h3>
-        <p class="log-company">Electronic Cats</p>
-        <ul>
-          <li>Developed and customized Odoo workflows for operations, accounting, and engineering documentation.</li>
-          <li>Worked on Odoo PLM integration with KiCad for BOM management and engineering change traceability.</li>
-          <li>Configured accounting, invoicing, bank reconciliation, taxes, and Mexican CFDI 4.0 workflows.</li>
-          <li>Troubleshot Odoo errors, PostgreSQL issues, module behavior, and Docker-based deployment problems.</li>
-          <li>Created and adjusted import files for accounting records, bank statements, taxes, and chart of accounts data.</li>
-        </ul>
+      <article id="project-web" class="project project-web" aria-labelledby="web-title">
+        <div class="project-copy"><p class="eyebrow">Web / Universidad Tecnológica El Retoño</p><h3 id="web-title">Una plataforma.<br> Muchas formas<br> de acceder.</h3><p>Desarrollo de componentes para el sitio oficial de la universidad, con interfaces adaptables a distintos dispositivos y una arquitectura modular.</p><dl class="project-details"><div><dt>Mi aportación</dt><dd>Componentes reutilizables, consistencia visual y mejoras de rendimiento del front-end, en colaboración con diseño y backend bajo SCRUM.</dd></div><div><dt>Herramientas</dt><dd>React · Astro · Tailwind CSS · JavaScript</dd></div></dl></div>
+        <figure class="project-visual"><div class="scene-slot" data-scene-slot="web" aria-hidden="true"><svg class="scene-fallback line-art" viewBox="0 0 600 440" fill="none" focusable="false"><g stroke="currentColor"><path d="m92 121 335-66 99 240-335 66Z" opacity=".22"/><path d="m73 151 335-66 99 240-335 66Z" opacity=".4"/><path d="m54 181 335-66 99 240-335 66Z"/><path d="m65 209 335-66M85 228l125-25 35 85-125 25Z M234 199l129-25M241 216l98-19M249 234l112-22M132 342l112-22M139 360l87-17M272 314l134-27M280 333l93-19" opacity=".65"/><path d="m148 275 35-41 46 26"/></g><path d="m65 209 335-66" stroke="#ff8759"/><g fill="#ff8759"><circle cx="72" cy="192" r="2.5"/><circle cx="82" cy="190" r="2.5"/><circle cx="92" cy="188" r="2.5"/></g></svg></div><figcaption>Representación conceptual / planos de interfaz</figcaption></figure>
       </article>
 
-      <article class="log-item reveal">
-        <div class="log-period">August 2025 - May 2026 / Aguascalientes, MX</div>
-        <h3>Front-End Developer - Dual Education Program</h3>
-        <p class="log-company">Universidad Tecnologica El Retono</p>
-        <ul>
-          <li>Developed components for the official university website using React, Astro, Tailwind CSS, and JavaScript.</li>
-          <li>Built responsive, reusable UI following component-based architecture.</li>
-          <li>Collaborated with designers, backend developers, and stakeholders under SCRUM.</li>
-          <li>Participated in sprint planning, backlog refinement, estimation, and daily stand-ups.</li>
-          <li>Improved interface consistency and front-end performance across the platform.</li>
-        </ul>
+      <article id="project-systems" class="project project-systems" aria-labelledby="systems-title">
+        <div class="project-copy"><p class="eyebrow">Sistemas / Electronic Cats</p><h3 id="systems-title">De ingeniería<br> a operación.</h3><p>Personalización de Odoo 18 Community para conectar operaciones, contabilidad y documentación de ingeniería.</p><dl class="project-details"><div><dt>Mi aportación</dt><dd>Integración de conceptos PLM con KiCad para listas de materiales y trazabilidad de cambios. Configuración contable, facturación, conciliación bancaria y flujos CFDI 4.0.</dd></div><div><dt>Herramientas</dt><dd>Odoo · Python · PostgreSQL · Docker · KiCad</dd></div></dl><p class="project-note">Prácticas profesionales · Mayo de 2026 — actualidad</p></div>
+        <figure class="project-visual"><div class="scene-slot" data-scene-slot="systems" aria-hidden="true"><svg class="scene-fallback line-art" viewBox="0 0 600 440" fill="none" focusable="false"><g stroke="currentColor"><path d="m62 220 76-44 76 44v84l-76 44-76-44Zm0 0 76 44 76-44m-76 44v84M238 118l76-44 76 44v84l-76 44-76-44Zm0 0 76 44 76-44m-76 44v84M409 220l76-44 76 44v84l-76 44-76-44Zm0 0 76 44 76-44m-76 44v84"/><path d="m74 216 64-36 63 36m49-102 64-36 63 36m44 102 64-36 63 36" opacity=".3"/><path d="m138 164 176-102 171 102M138 363l176-102 171 102" stroke-dasharray="2 8" opacity=".5"/></g><path d="m213 264 42-24m132-1 23 14M314 247v67" stroke="#ff8759"/><g fill="#ff8759"><circle cx="213" cy="264" r="3"/><circle cx="410" cy="253" r="3"/><circle cx="314" cy="314" r="3"/></g></svg></div><figcaption>Representación conceptual / módulos conectados</figcaption></figure>
       </article>
 
-      <article class="log-item reveal">
-        <div class="log-period">January 2025 - June 2026 / Aguascalientes, MX</div>
-        <h3>Security Officer - Industrial Access Control and CTPAT Procedures</h3>
-        <p class="log-company">TNR-Advans</p>
-        <ul>
-          <li>Safeguarded the Flextronics Aguascalientes facility through industrial security and access control protocols.</li>
-          <li>Verified personnel, visitors, contractors, transport units, and high-risk materials at security checkpoints.</li>
-          <li>Reviewed trailer, truck, cargo, and outbound custody documentation for shipments to Laredo.</li>
-          <li>Supported CTPAT-related procedures with attention to detail, confidentiality, and protocol compliance.</li>
-        </ul>
+      <article id="project-vr" class="project project-vr" aria-labelledby="vr-title">
+        <div class="project-copy"><p class="eyebrow">Realidad virtual / Oculus Quest 3</p><h3 id="vr-title">El código también<br> se habita.</h3><p>Un shooter interactivo de realidad virtual desarrollado con A-Frame y WebVR para explorar la interacción en un entorno espacial.</p><dl class="project-details"><div><dt>Mi aportación</dt><dd>Objetivos, puntos de vida, controles de movimiento, colisiones y disparos mediante los controladores del visor.</dd></div><div><dt>Herramientas</dt><dd>A-Frame · WebVR · JavaScript · Oculus Quest 3</dd></div></dl></div>
+        <figure class="project-visual"><div class="scene-slot" data-scene-slot="vr" aria-hidden="true"><svg class="scene-fallback line-art" viewBox="0 0 600 440" fill="none" focusable="false"><g stroke="currentColor"><path d="M64 54h472v332H64ZM196 140h208v146H196ZM64 54l132 86M536 54l-132 86M64 386l132-100m340 100L404 286"/><path d="M108 83h384v274H108ZM152 112h296v216H152M64 330h472M64 275h132m208 0h132M64 220h132m208 0h132M64 165h132m208 0h132" opacity=".22"/><path d="m64 386 174-100m62 100V286m236 100L362 286" opacity=".5"/></g><g stroke="#ff8759"><circle cx="300" cy="210" r="29"/><circle cx="300" cy="210" r="6"/><path d="M300 173v15m0 44v15m-37-37h15m44 0h15"/></g></svg></div><figcaption>Representación conceptual / volumen e interacción</figcaption></figure>
       </article>
 
-      <article class="log-item reveal">
-        <div class="log-period">August 2024 - December 2024 / Aguascalientes, MX</div>
-        <h3>Software Developer - Digital Legal Management System</h3>
-        <p class="log-company">DIF Estatal de Aguascalientes</p>
-        <ul>
-          <li>Designed a digital legal case management system using PHP, JavaScript, HTML, CSS, and SQL Server 2012.</li>
-          <li>Created modules for case registration, consultation, report generation, and user management.</li>
-          <li>Automated PDF report generation and improved legal documentation organization.</li>
-          <li>Reduced file search time by 80% and data errors by 90%.</li>
-        </ul>
-      </article>
+      <div class="additional-work"><p class="eyebrow">Otros trabajos</p><article><h3>Gestión jurídica digital</h3><p class="work-context">DIF Estatal de Aguascalientes · 2024</p><p>Sistema de registro y consulta de expedientes, seguimiento interno, gestión de usuarios y reportes PDF automatizados. Resultados registrados en el proyecto: 80 % menos tiempo de búsqueda y 90 % menos errores de datos.</p><p class="tech-line">PHP · JavaScript · HTML/CSS · SQL Server 2012 · SCRUM</p></article><article><h3>Aplicaciones web y datos</h3><p class="work-context">Interfaces adaptables · APIs · Bases de datos</p><p>Aplicaciones web con APIs externas y administración de bases de datos MySQL en máquinas virtuales con CentOS 7.</p><p class="tech-line">JavaScript · HTML/CSS · REST APIs · MySQL · CentOS 7</p></article></div>
+    </section>
 
-      <article class="log-item reveal">
-        <div class="log-period">2021 - January 2025 / Aguascalientes, MX</div>
-        <h3>Repair Specialist &amp; Customer Service</h3>
-        <p class="log-company">Teleperformance</p>
-        <ul>
-          <li>Provided technical support and troubleshooting for repair cases while meeting quality and response-time standards.</li>
-          <li>Resolved customer inquiries and billing discrepancies in coordination with the finance department.</li>
-          <li>Designed and delivered training sessions for new agents on procedures, systems, and service practices.</li>
-          <li>Consistently met productivity and quality metrics in a high-pressure support environment.</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="section-title reveal"><i data-lucide="folder-open"></i>Artifact Collection</h2>
-    <div class="artifact-grid">
-      <article class="artifact-card reveal featured-artifact">
-        <span class="artifact-mark">5-star system</span>
-        <h3>Digital Legal Management System</h3>
-        <p>DIF Estatal de Aguascalientes / 2024</p>
-        <ul>
-          <li>Centralized legal case information and improved internal case tracking.</li>
-          <li>Automated PDF reports and user management workflows.</li>
-          <li>Reduced search time by 80% and errors by 90%.</li>
-        </ul>
-        <div class="tech-row">
-          <span>PHP</span><span>JavaScript</span><span>HTML/CSS</span><span>SQL Server</span><span>SCRUM</span>
-        </div>
-      </article>
-
-      <article class="artifact-card reveal">
-        <span class="artifact-mark">VR build</span>
-        <h3>Virtual Reality Shooter - Oculus Quest 3</h3>
-        <p>Virtual Reality / WebVR</p>
-        <ul>
-          <li>Created an interactive VR shooter using A-Frame WebVR.</li>
-          <li>Implemented targets, life points, movement controls, collisions, and controller-based shooting.</li>
-        </ul>
-        <div class="tech-row">
-          <span>A-Frame</span><span>WebVR</span><span>JavaScript</span><span>Oculus Quest 3</span>
-        </div>
-      </article>
-
-      <article class="artifact-card reveal">
-        <span class="artifact-mark">Web platform</span>
-        <h3>University Website - UTR</h3>
-        <p>Universidad Tecnologica El Retono</p>
-        <ul>
-          <li>Built modular front-end components for the official university website.</li>
-          <li>Improved responsiveness, component reuse, consistency, and performance.</li>
-        </ul>
-        <div class="tech-row">
-          <span>React</span><span>Astro</span><span>Tailwind CSS</span><span>JavaScript</span>
-        </div>
-      </article>
-
-      <article class="artifact-card reveal">
-        <span class="artifact-mark">Web apps</span>
-        <h3>Web Development Projects</h3>
-        <p>APIs, databases, and responsive interfaces</p>
-        <ul>
-          <li>Built web applications using JavaScript, HTML, CSS, and external APIs.</li>
-          <li>Managed MySQL databases on virtual machines running CentOS 7.</li>
-        </ul>
-        <div class="tech-row">
-          <span>JavaScript</span><span>HTML/CSS</span><span>MySQL</span><span>CentOS 7</span><span>REST APIs</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="education">
-    <h2 class="section-title reveal"><i data-lucide="graduation-cap"></i>Lore &amp; Ascension</h2>
-    <div class="edu-grid">
-      <article class="edu-card active reveal">
-        <span>Active</span>
-        <h3>Engineering in Software Management and Development</h3>
-        <p>Universidad Tecnologica El Retono / 2025 - Present</p>
-      </article>
-      <article class="edu-card reveal">
-        <h3>Associate's Degree in Information Technology, Multiplatform Software Development</h3>
-        <p>Universidad Tecnologica El Retono / 2020 - 2024</p>
-      </article>
-      <article class="edu-card reveal">
-        <h3>Programming Technician Diploma</h3>
-        <p>CBTis 284, Aguascalientes / 2017 - 2020</p>
-      </article>
-    </div>
-
-    <h2 class="section-title small-title reveal"><i data-lucide="badge-check"></i>Constellations</h2>
-    <div class="cert-grid">
-      <article class="cert-card reveal">
-        <i data-lucide="badge-check"></i>
-        <div>
-          <h3>Red Hat Application Development I: Programming in Java EE</h3>
-          <p>Red Hat / Issued May 16, 2025</p>
-        </div>
-      </article>
-      <article class="cert-card reveal">
-        <i data-lucide="shield-check"></i>
-        <div>
-          <h3>SCRUM Fundamentals Certified</h3>
-          <p>SCRUMstudy</p>
-        </div>
-      </article>
-      <article class="cert-card reveal">
-        <i data-lucide="github"></i>
-        <div>
-          <h3>GitHub Foundations</h3>
-          <p>Udemy</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2 class="section-title reveal"><i data-lucide="send"></i>Send a Message</h2>
-    <div class="contact-shrine reveal">
-      <h3>Ready to team up?</h3>
-      <p>Open to roles in full-stack development, Odoo development, web engineering, ERP customization, and technical support.</p>
-      <div class="contact-links">
-        <a href="#contact" data-contact="email"><i data-lucide="mail"></i>Send Email</a>
-        <a href="#contact" data-contact="phone"><i data-lucide="phone"></i>Call Phone</a>
-        <a href="https://github.com/josuetrujillo-vr" target="_blank" rel="noreferrer"><i data-lucide="github"></i>GitHub</a>
+    <section id="experience" class="experience section wrap" aria-labelledby="experience-title">
+      <div class="experience-intro"><p class="eyebrow">Trayectoria</p><h2 id="experience-title">Construir.<br> Resolver.<br> Compartir.</h2><p>Experiencia entre desarrollo, soporte y procesos donde el detalle importa.</p><div class="scene-slot trajectory-slot" data-scene-slot="trajectory" aria-hidden="true"><svg class="scene-fallback line-art" viewBox="0 0 320 400" fill="none" focusable="false"><path d="M58 375C58 280 246 310 246 217S82 182 82 102 249 68 249 15" stroke="currentColor"/><path d="M66 375C66 280 254 310 254 217S90 182 90 102 257 68 257 15" stroke="currentColor" opacity=".25"/><g fill="#ff8759"><circle cx="58" cy="375" r="4"/><circle cx="218" cy="283" r="4"/><circle cx="180" cy="179" r="4"/><circle cx="89" cy="78" r="4"/><circle cx="249" cy="15" r="4"/></g></svg></div></div>
+      <div class="timeline">
+        <article><p class="period">Mayo 2026 — actualidad</p><h3>Odoo Developer</h3><p class="organization">Electronic Cats</p><p class="role-context">Prácticas · PLM e integración de procesos de ingeniería · Aguascalientes, MX</p><ul><li>Desarrollo y personalización de flujos para operaciones, contabilidad y documentación de ingeniería.</li><li>Integración PLM con KiCad para gestión de listas de materiales y trazabilidad de cambios.</li><li>Configuración de contabilidad, facturación, conciliación bancaria, impuestos y CFDI 4.0.</li><li>Resolución de errores de Odoo, PostgreSQL, módulos y despliegues con Docker.</li><li>Preparación de archivos de importación de registros contables, estados bancarios, impuestos y catálogo de cuentas.</li></ul></article>
+        <article><p class="period">Agosto 2025 — mayo 2026</p><h3>Desarrollador front-end</h3><p class="organization">Universidad Tecnológica El Retoño</p><p class="role-context">Programa de educación dual · Aguascalientes, MX</p><ul><li>Componentes del sitio oficial con React, Astro, Tailwind CSS y JavaScript.</li><li>Interfaces adaptables y reutilizables con arquitectura de componentes.</li><li>Colaboración con diseño, backend y partes interesadas bajo SCRUM.</li><li>Planificación de sprints, refinamiento del backlog, estimaciones y reuniones diarias.</li><li>Mejoras de consistencia visual y rendimiento del front-end.</li></ul></article>
+        <article><p class="period">Enero 2025 — junio 2026</p><h3>Oficial de seguridad</h3><p class="organization">TNR-Advans</p><p class="role-context">Control de acceso industrial y procedimientos CTPAT · Aguascalientes, MX</p><ul><li>Protección de las instalaciones de Flextronics Aguascalientes mediante protocolos de seguridad y control de acceso.</li><li>Verificación de personal, visitantes, contratistas, unidades de transporte y materiales de alto riesgo.</li><li>Revisión de documentación de remolques, camiones, carga y custodia de salidas hacia Laredo.</li><li>Apoyo a procedimientos CTPAT con confidencialidad, atención al detalle y cumplimiento de protocolos.</li></ul></article>
+        <article><p class="period">Agosto 2024 — diciembre 2024</p><h3>Desarrollador de software</h3><p class="organization">DIF Estatal de Aguascalientes</p><p class="role-context">Sistema digital de gestión jurídica · Aguascalientes, MX</p><ul><li>Diseño del sistema con PHP, JavaScript, HTML, CSS y SQL Server 2012.</li><li>Módulos de registro, consulta de expedientes, reportes y gestión de usuarios.</li><li>Automatización de reportes PDF y organización de documentación jurídica.</li><li>Reducción registrada de 80 % en tiempo de búsqueda y 90 % en errores de datos.</li></ul></article>
+        <article><p class="period">2021 — enero 2025</p><h3>Especialista en reparaciones y atención al cliente</h3><p class="organization">Teleperformance</p><p class="role-context">Soporte técnico · Aguascalientes, MX</p><ul><li>Soporte y resolución de casos de reparación con estándares de calidad y tiempo de respuesta.</li><li>Atención de consultas y discrepancias de facturación en coordinación con finanzas.</li><li>Diseño e impartición de capacitación a nuevos agentes sobre procedimientos, sistemas y servicio.</li><li>Cumplimiento constante de métricas de productividad y calidad en un entorno de alta presión.</li></ul></article>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer>
-  <p>Josue Trujillo Zenon / Frostmoon-inspired portfolio / 2026</p>
-</footer>
+    <section id="skills" class="skills section wrap" aria-labelledby="skills-title"><div class="section-heading"><p class="eyebrow">Herramientas y práctica</p><h2 id="skills-title">Un repertorio para<br> cada problema.</h2></div><dl class="skill-list"><div><dt>Lenguajes y frameworks</dt><dd>Java · JavaScript · Node.js · React · PHP · Python · HTML · CSS · Tailwind CSS · Astro</dd></div><div><dt>ERP y sistemas de negocio</dt><dd>Odoo 18 Community · Personalización de Odoo · Flujos contables · Conceptos PLM · Gestión de BOM · Trazabilidad de cambios de ingeniería · CFDI 4.0</dd></div><div><dt>Datos y plataformas</dt><dd>MySQL · SQL Server 2012 · PostgreSQL · Git · GitHub · Linux · Docker · CentOS 7 · Microsoft Office</dd></div><div><dt>Métodos, hardware y VR</dt><dd>SCRUM · Agile · Mejora de procesos · Documentación técnica · KiCad · WebVR · A-Frame</dd></div></dl></section>
 
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      obs.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.08 });
+    <section id="education" class="education section wrap" aria-labelledby="education-title"><div><p class="eyebrow">Formación</p><h2 id="education-title">Seguir aprendiendo.</h2></div><div class="education-content"><div class="education-list"><article><p class="period">2025 — actualidad</p><h3>Ingeniería en Gestión y Desarrollo de Software</h3><p>Universidad Tecnológica El Retoño</p></article><article><p class="period">2020 — 2024</p><h3>TSU en Tecnologías de la Información, Desarrollo de Software Multiplataforma</h3><p>Universidad Tecnológica El Retoño</p></article><article><p class="period">2017 — 2020</p><h3>Técnico en Programación</h3><p>CBTis 284 · Aguascalientes</p></article></div><h3 class="certifications-title">Certificaciones</h3><ul class="certifications"><li><span>Red Hat Application Development I: Programming in Java EE</span><span>Red Hat · 16 de mayo de 2025</span></li><li><span>SCRUM Fundamentals Certified</span><span>SCRUMstudy</span></li><li><span>GitHub Foundations</span><span>Udemy</span></li></ul></div></section>
 
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-document.querySelectorAll('a[href^="#"]:not([data-contact])').forEach(anchor => {
-  anchor.addEventListener('click', event => {
-    event.preventDefault();
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-
-const contacts = {
-  email: [115, 116, 51, 49, 52, 52, 64, 117, 116, 114, 46, 101, 100, 117, 46, 109, 120],
-  phone: [43, 53, 50, 52, 52, 57, 52, 51, 52, 55, 54, 50, 56]
-};
-
-document.querySelectorAll('[data-contact]').forEach(link => {
-  const value = contacts[link.dataset.contact].map(code => String.fromCharCode(code)).join('');
-  link.href = link.dataset.contact === 'email' ? `mailto:${value}` : `tel:${value}`;
-});
-
-lucide.createIcons();
-</script>
+    <section id="contact" class="contact section wrap" aria-labelledby="contact-title"><div class="contact-copy"><p class="eyebrow">Contacto</p><h2 id="contact-title">La siguiente conexión<br> empieza aquí.</h2><p>Abierto a oportunidades en desarrollo full-stack, Odoo, ingeniería web, personalización ERP y soporte técnico.</p><div class="contact-links"><a class="button" data-contact="email" href="mailto:st3144@utr.edu.mx">Escríbeme <span aria-hidden="true">↗</span></a><a class="text-link" data-contact="phone" href="tel:+524494347628">Llamar <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/josuetrujillo-vr" target="_blank" rel="noreferrer">GitHub <span class="sr-only">(abre una pestaña nueva)</span><span aria-hidden="true">↗</span></a></div></div><div class="scene-slot signature-slot" data-scene-slot="signature" aria-hidden="true"><svg class="scene-fallback line-art" viewBox="0 0 360 280" fill="none" focusable="false"><g stroke="currentColor"><path d="M52 58h122v123c0 43-71 57-91 19M55 64h113v116c0 38-62 49-79 18M193 58h131M258 58v167M193 64h131M252 64v161"/><path d="m49 52 131 9-5 125-21 34-45 12-29-28m109-152 138 8-66 4-6 165" opacity=".3"/></g><circle cx="308" cy="222" r="4" fill="#ff8759"/></svg></div></section>
+  </main>
+  <footer class="site-footer wrap"><p>Josue Trujillo Zenon <span aria-hidden="true">/</span> 2026</p><a href="#hero">Volver al inicio <span aria-hidden="true">↑</span></a></footer>
+  <script type="module" src="assets/main.mjs"></script>
 </body>
 </html>
